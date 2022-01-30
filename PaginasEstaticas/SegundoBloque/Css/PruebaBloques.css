@@ -1,0 +1,37 @@
+header, footer{
+    background-color: blue;
+    color: bisque;
+    width: 100%;
+    height: 200px;
+}
+section{
+    background-color: cadetblue;
+    color: aliceblue;
+    margin: 20px;
+    margin-top: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    float: right;
+}
+.Secciones{
+    width: 230px;
+    padding: 10px;
+    display: inline-block;
+    margin: 30px;
+}
+.Me{
+    width: 800px;
+    height: 1200px;
+    display: inline-block;
+    background-color: brown;
+    float: left;
+    margin: 30px;
+    padding: 20px;
+    background-image: url("https://www.fotoefectos.com/efectos/grandes/you_the_focus_filter.jpg");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+}

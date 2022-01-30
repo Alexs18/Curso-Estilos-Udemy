@@ -1,0 +1,30 @@
+body{
+    background-color: red;
+    width: 100%;
+    box-sizing: border-box;
+}
+#Contenido2{
+    background-color: aquamarine;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#Contenido1{
+    background-color: blue;
+    width: 200px;
+    margin-left: 50px;
+    padding-left: 50px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#Contenido3{
+    margin: 200px 300px 30px 10px;
+    background-color: yellow;
+    display: inline-block;
+    width: 200px;
+}

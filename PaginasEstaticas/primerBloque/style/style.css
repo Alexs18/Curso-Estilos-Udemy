@@ -1,0 +1,37 @@
+body
+{
+    width: 800px;
+
+}
+h1
+{
+    color: rgb(224, 168, 12);
+    font-size: 40px;
+}
+h2
+{
+  color: rgb(8, 8, 44);
+  font-size: 30px;  
+ 
+}
+img
+{
+    width: 300px;
+    height: 300px;
+
+}
+#Avatar
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: 1px solid red;
+  border-bottom: 2px solid yellow;
+  border-left: 3px solid blue;
+  border-right: 4px solid green;
+}
+#InfoAvatar 
+{
+    color: red;
+    font-size:30px;
+}

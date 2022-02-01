@@ -1,0 +1,53 @@
+.Header, .Footer{
+    width: 90%;
+    margin: 50px 50px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background-color: aqua;
+}
+.Content{
+    width: 90%;
+    margin-right: 20px;
+    
+    box-sizing: border-box;
+    margin: 20px;
+    display: inline-block;
+}
+.Articule{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(22, 12, 8);
+    width: 70%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    height: auto;
+    text-align: justify;
+    line-height: 20px;
+    
+}
+.Articule1{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.post{
+    width: 15%;
+    margin: 5px;
+    padding: 20px;
+    color: rgb(19, 18, 17);
+    display: inline-block;
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.Child-post{
+    margin: 20px, 20px;
+
+}
+.Child-post, img{
+    width: 200px;
+    height: auto;
+}

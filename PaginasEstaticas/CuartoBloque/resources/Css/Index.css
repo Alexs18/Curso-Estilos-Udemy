@@ -1,5 +1,5 @@
 header{
-    background:linear-gradient(rgb(80, 80, 136), rgb(77, 72, 72));
+    background-color: rgb(24, 23, 23);
     background-repeat: no-repeat;
     background-position: initial;
     margin: 10px;
@@ -9,10 +9,16 @@ header{
     justify-content: space-between;
      flex-wrap: wrap;
 }
+.Logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: red;
+}
 p{
     font-family: 'Comforter', cursive;
-    font-size: 25px;
-    color: rgb(22, 7, 7);   
+    font-size: 15px;
+    color: rgb(255, 253, 253);   
     
 }
 .Grid{
@@ -25,29 +31,53 @@ p{
  }
  .Grid > div{
     
-     color: black;
- }
- .Grid > div:hover{
-    background:linear-gradient(rgb(59, 51, 51), rgb(172, 172, 201));
-     color: rgb(173, 160, 143);
  }
  .item1, .item2, .item3, .item7, .item8, .item9{
-     background-color: rgb(21, 97, 97);
+     background-color: rgb(255, 255, 255);
+     border: 0.5px solid black;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     color: rgb(5, 3, 1);
  }
  .item4{
      grid-column: 4/4;
      grid-row: 1/4;
-     background-color: rgb(173, 167, 167);
+     background-color: rgb(107, 212, 55);
      justify-content: center;
      justify-items: center;
+     color: black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     line-height: 2em;
  }
  .item5{
      grid-column: 1/4;
-     background-color: rgb(173, 167, 167);
+     background-color: rgb(255, 255, 255);
+     background-image: url("../Img/Procesos.JPG");
+     background-repeat: no-repeat;
+     background-position: initial;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
  }
  .Init{
      display: flex;
      justify-content: space-between;
      margin: 20px;
+ }
+
+ ul > li {
+     list-style: none;
+     padding: 3px;
+ }
+ img{
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
  }
 

@@ -1,0 +1,39 @@
+.viewport{
+    background-color: red;
+    height: 100vh;
+    background-image: url("../Img/Page1.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.viewport1{
+    background-color: aquamarine;
+    height: 100vh;
+    background-image: url("../Img/Page2.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.viewport2 {
+    background-color: blue;
+    height: 100vh;
+    background-image: url("../Img/Page3.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.viewport3{
+    background-color: blueviolet;
+    height: 100vh;
+    background-image: url("../Img/Page4.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}

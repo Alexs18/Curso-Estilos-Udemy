@@ -1,0 +1,104 @@
+.Contenido{
+    position: relative;
+    width: 100%;
+}
+.Borde{
+    position: absolute;
+    background: linear-gradient(blue, White);
+    width: 60px;
+    height: 750px;
+    top: -120px;
+}
+p{
+    font-size: 20px;
+}
+.Grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+    margin-top: 3%;
+}
+.Items2, .Items3, .Items6, .Items7, .Items8{
+    border: 1px solid black;
+    height: 290px;
+}
+.Items3{
+     
+}
+
+.Subproce{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.Subproceso1{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.Subproceso2{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 50%;
+    border-radius: 3%;
+    border: none;
+    height: 97px;
+    margin-left: -35%;     
+}
+.Subproceso{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 50%;
+    border-radius: 3%;
+    border: none;
+    height: 97px;
+    margin-left: 35%;     
+}
+body{
+  
+}
+.Items2{
+    background-image: url("../Img/bloque1.png");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+}
+.Items3{
+    background-image: url("../Img/Bloque2.jpg");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+} 
+.Items6{
+    background-image: url("../Img/Bloque3.PNG");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+} 
+.Items7{
+    background-image: url("../Img/Bloque4.jpg");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+}
+.Items8{
+    background-image: url("../Img/Bloque5.jpg");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+}
+header{
+    background: linear-gradient(blue, White);
+    margin: 3px;
+    padding: 10px;
+}

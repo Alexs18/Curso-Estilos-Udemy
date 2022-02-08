@@ -27,9 +27,9 @@
     background-color: blueviolet;
     height: 100vh;
     background-image: url("../Img/Page4.jpg");
-    background-position: initial;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
 }
 .Contenido{
     display: flex;

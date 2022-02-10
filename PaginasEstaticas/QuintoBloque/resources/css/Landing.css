@@ -47,28 +47,29 @@ header{
     left: 65px;
 }
 .Title{
- margin-top: 15%;
- margin-left: 10%;
- text-align: center;
-}
-
-ul, li{
-    list-style: none;
-    display: inline;
-    line-height: 20px;
-    padding: 25px;
-}
-h1{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;    
-}
-h3{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 50px;
-}
+    margin-top: 15%;
+    margin-left: 10%;
+    text-align: center;
+   }
+   
+   ul, li{
+       list-style: none;
+       display: inline;
+       line-height: 20px;
+       padding: 25px;
+   }
+   h1{
+       color: rgb(255, 255, 255);
+       font-size: 20px;
+       font-family: 'Courier New', Courier, monospace;    
+   }
+   h3{
+       color: rgb(255, 255, 255);
+       font-size: 20px;
+       font-family: 'Courier New', Courier, monospace;
+       margin-bottom: 50px;
+   }
+   
 .btn{
     text-decoration: none;
     padding: 20px;
@@ -81,4 +82,9 @@ h3{
 }
 .btn:hover{
     background:linear-gradient(rgb(252, 252, 6), rgb(34, 32, 32, 0.7));   
+}
+
+ul li:hover{
+    border-bottom: 2px solid rgb(252, 252, 6, .7);
+    
 }

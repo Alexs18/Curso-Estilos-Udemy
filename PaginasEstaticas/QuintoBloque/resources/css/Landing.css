@@ -1,3 +1,4 @@
+
 header{
     background-image: linear-gradient(rgb(0, 0, 0, .3), rgb(0,0,0,.7)),url("../Img/FondoLanden.jpg");
     background-repeat: no-repeat;
@@ -23,7 +24,7 @@ header{
     color: rgb(255, 255, 255);
 }
 .one{
-    background-color: red;
+    background:linear-gradient(rgb(253, 0, 0, .5), rgb(255, 255, 255, .3));
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -31,14 +32,14 @@ header{
     right: -90px;
 }
 .Two{
-    background-color: rgb(4, 77, 172);
+    background: linear-gradient(rgb(5, 5, 255, .7), rgb(0, 0, 0, .2));
     width: 40px;
     height: 40px;
     border-radius: 50%;
     right: -20px;
 }
 .Three{
-    background-color: rgb(238, 255, 0);
+    background:linear-gradient(rgb(248, 153, 10), rgb(0, 0, 0, .8) );
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -66,4 +67,18 @@ h3{
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
+}
+.btn{
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 200px;
+}
+.btn-info{
+    background:linear-gradient(rgb(252, 252, 6, .7), rgb(34, 32, 32));
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+}
+.btn:hover{
+    background:linear-gradient(rgb(252, 252, 6), rgb(34, 32, 32, 0.7));   
 }

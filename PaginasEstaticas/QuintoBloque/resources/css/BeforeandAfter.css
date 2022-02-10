@@ -1,0 +1,146 @@
+body{
+    background: linear-gradient(rgb(255, 238, 0, .7), rgb(0, 0, 255, .6));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.Contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.PracticeBefore{
+    position: relative;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+.PracticeBefore::before{
+    position: absolute;
+    content: counter(contador);
+    background-color: red;
+    width: 10px;
+    height: 100px;
+    top: 50px;
+    z-index: -1;
+}
+.PracticeBefore::after{
+    position: absolute;
+    content: "Hola Mundo After";
+    background-color: red;
+    width: 10px;
+    top: 50px;
+    height: 100px;
+    left: 100px;
+    z-index: -1;
+}
+
+.Payaso{
+    background-color: rgb(253, 154, 117);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.Face{
+    position: relative;
+}
+.Face::before{
+    content: "";
+    width: 100px;
+    height: 120px;
+    background-color: rgb(7, 7, 7, .7);
+    position: absolute;
+    right: 150px;
+    border-radius: 200px;
+    z-index: -1;
+}
+.Face::after{
+    content: "";
+    width: 100px;
+    height: 120px;
+    background-color: rgb(7, 7, 7, .7);
+    position: absolute;
+    left: 150px;
+    border-radius: 200px;
+    z-index: -1;
+}
+.Ojos1{
+    background-color: bisque;
+    position: absolute;
+    left: 110px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.Ojos1::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.Ojos2{
+    background-color: bisque;
+    position: absolute;
+    right: 110px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.Ojos2::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.Nariz{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+.Nariz::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 4, 4, .7);
+    position: absolute;
+    z-index: -1;
+}
+.Cejas{
+    background-color: rgb(2, 2, 2, .5);
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    left: 50px;
+}
+.Cejas2{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    left: 100px;
+    top: -10px;
+}
+.Boca{
+    background-color: aliceblue;
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    top: 100px;
+    left: 20px;
+    border-radius: 20px;
+}

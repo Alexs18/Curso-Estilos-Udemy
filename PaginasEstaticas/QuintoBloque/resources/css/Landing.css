@@ -135,3 +135,46 @@ ul li:hover{
     height: 400px;
     border-radius: 50%;
 }
+
+/*Section skills*/
+.skilss{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.Titulo{
+    align-items: center;
+    text-align: center;
+}
+.skill{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.skills-about{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    position: relative;
+}
+.skills-about::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: brown;
+    margin-bottom: red;
+}
+.ContentImagenes img{
+    width: 200px;
+    height: 220px;
+}
+.ContentImagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.imganimation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

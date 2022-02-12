@@ -20,18 +20,18 @@ body{
 }
 .PracticeBefore::before{
     position: absolute;
-    content: counter(contador);
+    content: "before";
     background-color: red;
-    width: 10px;
+    width: 100px;
     height: 100px;
     top: 50px;
     z-index: -1;
 }
 .PracticeBefore::after{
     position: absolute;
-    content: "Hola Mundo After";
-    background-color: red;
-    width: 10px;
+    content: "after";
+    background-color: rgb(229, 255, 0);
+    width: 100px;
     top: 50px;
     height: 100px;
     left: 100px;

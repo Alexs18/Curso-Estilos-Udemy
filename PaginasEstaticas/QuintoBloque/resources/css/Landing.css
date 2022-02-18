@@ -138,7 +138,7 @@ ul li:hover{
 
 /*Section skills*/
 .skilss{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -180,6 +180,59 @@ ul li:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(rgb(0, 0, 0, .8), rgb(0, 0, 255, .5));
     padding: 20px;
+}
+.img-skills:hover{
+    transform: scale(1.50);
+    opacity: 1;
+}
+.img-skills{
+    transition: 2s;
+}
+/*especializacion*/
+.specializacion{
+    height: 100vh;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.img-spe{
+    width: 150px;
+    height: 150px;
+    transition: 2s;
+}
+.img-spe:hover{
+    transform:scale(1.50);
+    opacity: 3;
+    transition: 2s;
+}
+.ContenEspe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: auto 10px auto 10px;
+}
+
+.Tituloespe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+.Tituloespe::after{
+    content: "";
+    background-color: red;
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    top: 135px;
+}
+.especialidad{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

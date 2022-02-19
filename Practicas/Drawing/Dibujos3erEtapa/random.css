@@ -1,0 +1,372 @@
+.Contenido{
+    background-color: rgb(0, 0, 0, .7);
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.Cabeza{
+    background-color: rgb(255, 238, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 80px 80px 30px 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.Cabeza::before{
+    background-color: blue;
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 75px;
+    top: 50%;
+    border-top: 100px solid blue;
+}
+.Parches{
+    position: absolute;
+    background-color: rgb(255, 238, 0);
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    right: 68px;
+    border-radius: 0 50px 50px 0;
+    transform: rotate(18deg);
+    border-left: 10px solid rgb(255, 238, 0);
+}
+.Parches::after{
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 20px;
+    background-color: rgb(0, 0, 255);
+    top: 75%;
+    transform: rotate(-18deg);
+
+}
+.Parches1{
+    position: absolute;
+    background-color: rgb(255, 238, 0);
+    width: 60px;
+    z-index: 1;
+    height: 60px;
+    top: -10px;
+    left: 75px;
+    border-radius: 50px 0px 0px 50px;
+    transform: rotate(-18deg);
+    border-right: 10px solid rgb(255, 238, 0);
+}
+.Parches1::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    right: 15px;
+    height: 22px;
+    background-color: rgb(0, 0, 255);
+    top: 60%;
+    transform: rotate(18deg);
+
+}
+.Overol{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 37%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+
+}
+.Overol::after{
+    background-color: blue;
+    position: absolute;
+    content: "MIN";
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    left: 15%;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Botones{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    top: 62%;
+    left: 22%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.Botones::after{
+    content: "";
+    background-color:black;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 98px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.pies{
+    background-color:blue;
+    width: 37px;
+    height: 60px;
+    margin-right: 80px;
+    margin-top: -20px;
+    position: relative;
+}
+.pies::after{
+    content: "";
+    background-color: black;
+    width: 37px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100px 100px 50px 10px;
+    top: 70%;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+.pies1{
+    background-color:blue;
+    width: 37px;
+    height: 60px;
+    margin-left: 80px;
+    margin-top: -60px;
+    position: relative;
+}
+.pies1::after{
+    content: "";
+    background-color: black;
+    width: 37px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100px 100px 50px 10px;
+    top: 70%;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+.Cara{
+    background-color: rgb(255, 238, 0);
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 11%;
+    overflow: hidden;
+    border-radius: 100px 100px 0px 0px;
+
+}
+.CabelloI{
+    background-color: black;
+    width: 70px;
+    height: 5px;
+    border-radius: 100px 100px 100px 0 ;
+    margin-top: 15px;
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    transform: rotate(160deg);
+}
+.CabelloD{
+    background-color: black;
+    width: 70px;
+    height: 5px;
+    border-radius: 100px 100px 100px 0 ;
+    margin-top: 18px;
+    position: absolute;
+    z-index: 1;
+    left: 120px;
+    transform: rotate(20deg);
+}
+.CabelloD::after{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 80px;
+    height: 5px;
+    border-radius: 100px 100px 100px 0 ;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: -7px;
+    transform: rotate(0deg);
+}
+.CabelloD::before{
+    content: "";
+    background-color: rgb(5, 5, 5);
+    width: 60px;
+    height: 5px;
+    border-radius: 100px 100px 100px 0 ;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 7px;
+    transform: rotate(0deg);
+}
+.CabelloI::after{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 80px;
+    height: 5px;
+    border-radius: 100px 100px 100px 0 ;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: -7px;
+    transform: rotate(0deg);
+}
+.CabelloI::before{
+    content: "";
+    background-color: rgb(5, 5, 5);
+    width: 60px;
+    height: 5px;
+    border-radius: 100px 100px 100px 0 ;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 7px;
+    transform: rotate(0deg);
+}
+.Ojo0{
+    background-color: rgb(255, 255, 1);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    border: 10px solid rgb(0,0,0);
+    top: 29%;
+    left: 30px;
+}
+.Ojo0::after{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+    top: -2%;
+    left: -42px;
+    transform: rotate(10deg);
+    border-radius: 0 0 10px 0;
+    border-right: 12px solid rgba(0, 0, 0, 0.7);;
+}
+.Ojo1{
+    background-color: rgb(251, 255, 0);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    z-index: 1;
+    top: 29%;
+    left: 94px;
+    border-radius: 50%;
+    border: 10px solid rgb(0,0,0);
+}
+.Ojo1::after{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+    top: -2%;
+    left: 45px;
+    transform: rotate(-10deg);
+    border-radius: 0 0 10px 0;
+    border-right: 12px solid rgba(0, 0, 0, 0.7);;
+}
+.Pupila{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+.Pupila::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.Risa{
+    background-color: black;
+    width: 90px;
+    height: 40px;
+    border-radius: 0 0 100px 100px;
+    position: absolute;
+    top: 73%;
+    left: 30%;
+    overflow: hidden;
+    border-top: 1px solid black;
+}
+.Risa::before{
+    content: "";
+    width: 90px;
+    background-color: bisque;
+    height: 10px;
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+}
+
+.Brazos{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+}
+.brazoI{
+    background-color: rgb(251, 255, 0);
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    top: 90px;
+    left: 85px;
+    border-radius: 0 0 10px 100px;
+    transform: rotate(-50deg);
+    border-bottom: 10px solid black;
+}
+.brazoI::after{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    content: "";
+    position: absolute;
+    right: -6px;  
+    transform: rotate(0deg);
+    top: -20px; 
+    border-radius: 50% 50% 5px 5px;
+}
+.brazoD{
+    background-color: rgb(251, 255, 0);
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    top: 90px;
+    right: 81px;
+    border-radius: 0 0 100px 10px;
+    transform: rotate(50deg);
+    border-bottom: 10px solid black;
+}
+.brazoD::after{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    content: "";
+    position: absolute;
+    right: -6px;  
+    transform: rotate(0deg);
+    top: -20px; 
+    border-radius: 50% 50% 5px 5px;
+}

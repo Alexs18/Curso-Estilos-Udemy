@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Ejemplo de circulo como perspectiva*/
+.EjemploPerspectiva{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContenidoCirculo{
+    background-color: black;
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    perspective: 400px;
+   
+}
+.Circulo{
+    background-color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translateZ(10px);
+    transition: all 5s;
+}
+.ContenidoCirculo:hover .Circulo{
+    transition: all 5s;
+    transform: rotateY(200deg);
+    transform-style: preserve-3d;
+}
+p{
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+.ContenidoTarjetaFlip{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.TarjetaFlip{
+    background-color:transparent;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    perspective: 900px;
+    transform-style: preserve-3d;
+}
+.rigthTarjeta{
+    background-color: black;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    transition: 1s;
+    transform: rotateY(50deg);
+}
+.leftTarjeta{
+    background-color: yellow;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    transform:rotateY(50deg);
+    left: 200px;
+}
+.ApiTarjeta{
+    background-color: rgb(0, 162, 255);
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    transform:rotateY(50deg);
+    left: 110px;
+}
+.TarjetaFlip:hover{
+   transform: rotateY(120deg) rotateZ(20deg);
+   transition: all 5s; 
+}
+
+/*Efecto flip*/
+.Tarjetas{
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+.contenidoCard{
+    background-color: transparent;
+    border: 1px solid black;
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: 5s;
+}
+.Frontend{
+    background-color: blueviolet;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+}
+.Backend{
+    background-color: chartreuse;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.Tarjetas:hover .contenidoCard{
+    transform: rotateY(180deg);
+}

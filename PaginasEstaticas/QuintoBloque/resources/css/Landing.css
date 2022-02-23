@@ -336,20 +336,17 @@ h2{
     top: 30px;
 }
 .ServerClientimg{
-    width: 320px;
+    width: 295px;
     height: 250px;
     border-radius: 10px;
     transition: 5s;
 }
-.ServerClientimg:hover{
-    transform: rotateY(90deg);
-    transition: 5s;
-    content: "TRrabsaccion";
-}
-.ServicioAlCliente{
+.ServicioAlCliente, .Desarrollador{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
+    perspective: 1000px;
+    margin-left: 100px;
 }
 .TrabajosRealizados{
     display: flex;
@@ -357,6 +354,42 @@ h2{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 300px;
+    height: 410px;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+.ContenidoTrabajo{
+    background-color: rgb(194, 194, 201);
+    border: 1px solid rgb(0, 0, 0, .7);
+    width: 300px;
+    height: 410px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.EspecificacionTrabajo{
+    background-color: rgb(239, 241, 237);
+    width: 300px;
+    height: 410px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.TrabajosRealizados:hover{
+    transform: rotateY(180deg);
+    transition: 1.5s;
 }
 .TituloServicio, .TituloDeveloper{
     text-align: center;

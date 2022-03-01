@@ -463,3 +463,50 @@ h2{
     height: 200px;
     margin-left: 10px;
 }
+/*Footer*/
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(78, 78, 78);
+    margin-top: 0px;
+    padding-top: 40px;
+    margin-top: 10px;
+}
+.InformacionFooter{
+    width: 60%;
+    background-color: rgb(78, 78, 78);
+    height: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    line-height: 20px;
+}
+.Text-End{
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+/*Colores iconos*/
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color: coral;
+}
+.fa-twitter{
+    color: aquamarine;
+}
+.fa-linkedin{
+    color: cadetblue;
+}
+.fa-envelope{
+    color: rgb(231, 102, 9);
+}
+.fa-phone{
+    color: black;
+}
+.fa-map-marker{
+    color: darkred;
+}

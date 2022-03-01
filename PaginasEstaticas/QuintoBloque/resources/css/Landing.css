@@ -423,7 +423,7 @@ h2{
     justify-content: flex-start;
     color: black;
     margin-bottom: 20px;
-    border-radius: 0 0 50px 0;
+    border-radius: 0 0 10px 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .Conocimientos-definidos{
@@ -440,4 +440,26 @@ h2{
     gap: 1em;
     margin-top: 50px;
     margin-left: 100px;
+}
+/*Seccion intereses*/
+.Interested{
+    margin-top: 20px;
+}
+.Intereses-Box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-template-rows: 250px 250px 250px;
+}
+.InteresesContent{
+    background-color: rgb(211, 211, 211);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(75, 147, 209);
+}
+.ImgIntereses{
+    width: 150px;
+    height: 200px;
+    margin-left: 10px;
 }

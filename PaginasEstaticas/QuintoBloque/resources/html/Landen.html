@@ -10,22 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/Landing.css">
     <link rel="stylesheet" href="../css/DrawingLinux.css">
+    <link rel="stylesheet" href="../Responsive/MediaQuery.css">
     <title></title>
 </head>
 <body>
     <header>
-        <div class="Logo-Menu">
+        <div class="Logo-Menu" id="Home">
             <div class="Logo">
                 <p class="one"></p>
                 <p class="Two"></p>
                 <p class="Three"></p>
                 <p class="Landing">Landing page</p>
             </div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Setting</li>        
+            <ul class="Items-Menu" >
+                <li><a href="#Home">Home</a></li>
+                <li> <a href="#About">About</a> </li>
+                <li> <a href="#Tecnology">Tecnology</a></li>
+                <li> <a href="#Especializacion">Especializaciones</a> </li>
+                <li> <a href="#Plataformas">Plataformas</a> </li>
+                <li> <a href="#Experiencias">Experiencias</a> </li>
+                <li> <a href="#Habilidades">Habilidades</a> </li>
+                <li> <a href="#Intereses">Intereses</a> </li>        
             </ul>
         </div>
         
@@ -40,9 +45,9 @@
         </div>
     </header>
 
-    <section class="About">
+    <section class="About" id="About">
         <div class="Context">
-            <h2 class="first-text">we can always chance yout life just do it damn it </h2>
+            <h2 class="first-text" style="color: black;">we can always chance yout life just do it damn it </h2>
             <p class="second-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, beatae! </p>
             <p class="second-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, beatae! </p>
             <a class="ReadMore" href="">Read more...</a>
@@ -53,10 +58,10 @@
         </div>
     </section>
 
-    <section class="skilss">
+    <section class="skilss" id="Tecnology">
         <div class="Titulo">
-            <h1 class="skill">Skills</h1>
-            <h3 class="skills-about">My skills in develoment</h3>
+            <h1 class="skill">Tecnologys</h1>
+            <h3 class="skills-about">I know about this tecnologys</h3>
         </div>
         <div class="ContentImagenes">
             <figure class="imganimation">
@@ -95,7 +100,7 @@
         
     </section>
 
-    <section class="specializacion">
+    <section class="specializacion" id="Especializacion">
 
         <div class="Tituloespe">
             <h3 class="Especializando">Especialización</h3>
@@ -127,9 +132,9 @@
         </div>
     </section>
 
-    <section class="CursosSection">
+    <section class="CursosSection" id="Plataformas">
         <div class="TituloCursos">
-            <h1 class="Cursos">Cursos</h1>
+            <h1 class="Cursos">Plataformas de Aprendizaje</h1>
             <h3 class="Cursos-About"> En este apartado podrá observar las plataformas en las cuales el autor se ah especializado </h3>
         </div>
         <div class="Plataformas-online">
@@ -163,7 +168,7 @@
         </div>
     </section>
 
-    <section class="Experiencia">
+    <section class="Experiencia" id="Experiencias">
         <div class="ExperienciaTitulo">
             <h1 class="Expirience">Experiencia</h1>
             <h3 class="Expirience-About"> En esta sección se podrán verificar las experiencias que ah tenido el autor </h3>
@@ -173,6 +178,7 @@
             <p class="TituloServicio">Servicio al cliente</p>
             <div class="ServicioAlCliente">
                 <div class="TrabajosRealizados">
+
                     <div class="ContenidoTrabajo">
                         <img class="ServerClientimg" src="../Img/Isesa.jpg" alt="">
                         <blockquote>
@@ -191,6 +197,7 @@
                         </p>
                     </div> 
                 </div>
+
                 <div class="TrabajosRealizados">
                     <div class="ContenidoTrabajo">
                         <img class="ServerClientimg" src="../Img/Barbasquillo.jpg" alt="">
@@ -210,7 +217,7 @@
                     </div> 
                 </div>
                 <div class="TrabajosRealizados">
-                    <div class="ContenidoTrabajo">
+                    <div class="ContenidoTrabajo ContenidoTrabajo2">
                         <img class="ServerClientimg" src="../Img/Digitador.jpg" alt="">    
                         <blockquote>
                             <p>Cargo: <span>Digitalizador "Voluntario"</span></p>
@@ -253,9 +260,9 @@
         </div>
     </section>
 
-    <section class="Conocimientos-definidos">
+    <section class="Conocimientos-definidos" id="Habilidades">
         <div class="ConocimientosTitulo">
-            <h1 class="Conocimientos">Conocimientos</h1>
+            <h1 class="Conocimientos">Habilidades</h1>
             <h3 class="Conocimientos-About"> En esta sección se podrán encontrar actividades especificas relacionadas con las skills </h3>
         </div>
         <div class="Trabajos">
@@ -346,7 +353,7 @@
         </div>
     </section>
 
-    <section class="Interested">
+    <section class="Interested" id="Intereses">
         <div class="ConocimientosTitulo">
             <h1 class="Conocimientos">Intereses</h1>
             <h3 class="Conocimientos-About"> En esta sección se podrán encontrara intereses extras del autor </h3>
@@ -354,7 +361,7 @@
         <div class="Intereses-Box">
             <div class="InteresesContent">
                 <img class="ImgIntereses" src="../Img/Lenguas.jpg" alt="">
-                <blockquote>
+                <blockquote class="InteresesMedia">
                     <h6>Aprendizaje de lenguas Extranjeras</h6>
                     <p>Aprender nuevos idiomas abre la puerta a aprender nuevas culturas y conocer personas 
                         con conocimientos diferentes de los tuyos, ademas de ser una buena herramienta para 
@@ -365,7 +372,7 @@
 
             <div class="InteresesContent">
                 <img class="ImgIntereses" src="../Img/Lectura.jpg" alt="">
-                <blockquote>
+                <blockquote class="InteresesMedia">
                     <h6>Lectura</h6>
                     <p>
                         No importa que problema tengas, sea social, de trabajo, familiar
@@ -376,7 +383,7 @@
             </div>
             <div class="InteresesContent">
                 <img class="ImgIntereses" src="../Img/Carpinteria.jpg" alt="">
-                <blockquote>
+                <blockquote class="InteresesMedia">
                     <h6>Carpinteria</h6>
                     <p>
                         Crear Cosas desde cero es una de las actividades mas gratificantes que 
@@ -386,7 +393,7 @@
             </div>
             <div class="InteresesContent">
                 <img class="ImgIntereses" src="../Img/Futbool.jpg" alt="">
-                <blockquote>
+                <blockquote class="InteresesMedia">
                     <h6>Footbal</h6>
                     <p>
                         Sin salud, es casi imposible seguir con las rendas de tu camino,
@@ -397,7 +404,7 @@
             </div>
             <div class="InteresesContent">
                 <img class="ImgIntereses" src="../Img/Mente.jpg" alt="">
-                <blockquote>
+                <blockquote class="InteresesMedia">
                     <h6>Psicologia</h6>
                     <p>
                         Saber como funciona la mente Humana es uno de los grandes emigmas que se han tratado por muchos años
@@ -408,7 +415,7 @@
             </div>
             <div class="InteresesContent">
                 <img class="ImgIntereses" src="../Img/Seguridad.jpg" alt="">
-                <blockquote>
+                <blockquote class="InteresesMedia">
                     <h6>Seguridad</h6>
                     <p>
                         En un mundo globalizado lo mejor es estar actualizados en cuanto a fallas y saber prevenirlas

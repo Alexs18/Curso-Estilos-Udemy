@@ -7,11 +7,18 @@ header{
     height: 100vh;
   
 }
+.Items-Menu > li > a{
+    text-decoration: none;
+    color: wheat;
+}
+.Items-Menu > li > a:hover{
+    border-bottom: 2px solid rgb(252, 252, 6, .7);
+}
 .Logo-Menu{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    color: antiquewhite;
+    color: antiquewhite; 
 }
 .Logo{
     position: relative;
@@ -51,7 +58,7 @@ header{
     margin-top: 15%;
     margin-left: 10%;
     text-align: center;
-   }
+}
    
    ul, li{
        list-style: none;
@@ -85,10 +92,6 @@ header{
     background:linear-gradient(rgb(252, 252, 6), rgb(34, 32, 32, 0.7));   
 }
 
-ul li:hover{
-    border-bottom: 2px solid rgb(252, 252, 6, .7);
-    
-}
 
 /*Section about**/
 .About{

@@ -1,0 +1,217 @@
+.Container{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 500px;
+}
+.Under{
+    overflow: hidden;
+    background: linear-gradient(rgb(94, 87, 87), antiquewhite);
+    width: 196px;
+    height: 400px;
+    border-top: 10px solid rgb(43, 42, 42);
+    border-left: 10px solid rgb(51, 50, 50);
+    margin-left: 20px;
+    perspective: 200px;
+    transform: rotateY(50deg);
+    position: relative;
+    box-shadow: 0px 30px 50px black;
+}
+.SombraDoor{
+    position: relative;
+    transform: rotateY(50deg) rotateX(90deg);
+    right:305px;
+    top: 190px;
+    z-index: 1;
+}
+.Under2{
+    content: "";
+    background:linear-gradient(rgb(0, 0, 0, .7),  rgb(255, 255, 255, .7));
+    width: 180px;
+    height: 170px;
+    position: absolute;
+    top: 200px;
+    transform-style: preserve-3d;
+    border-radius: 10px 0 0 0;
+
+}   
+.Door{
+    transform: rotateZ(-90deg);
+    background: linear-gradient(black, rgb(68, 63, 63), black);
+    width: 190px;
+    height: 396px;
+    position: relative;
+    right: 50px;
+    transform: rotateY(-40deg);
+    transform-style: preserve-3d;
+    perspective:100px;
+
+}
+.Door::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 44%;
+    left: 160px;
+    transform: rotateY(0deg);
+    z-index: 100;
+}
+.Under1{
+    width: 200px;
+    height: 400px;
+    background-color: transparent;
+    transition: 2s;
+    perspective: 500px;
+    position: relative;
+    
+}
+.Escalera{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    position: relative;
+    transform-style: preserve-3d;
+    right: 29px;
+    top: 20px;
+    box-shadow: 40px -20px 20px rgb(53, 52, 52);
+
+}
+.Escalera::after{
+    box-shadow: 40px -20px 20px rgb(53, 52, 52);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: -20px;
+    left: 15px;
+    transform: rotateX(60deg);
+    transform: skewX(40deg);
+    border-radius: 0 0 10px 0;    
+
+}
+.Escalera1{
+    width: 125px;
+    height: 50px;
+    background-color: red;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    position: relative;
+    transform-style: preserve-3d;
+    right: 15px;
+    top: 39px;
+    box-shadow: 90px -60px 50px 20px rgb(53, 52, 52);
+
+}
+.Escalera1::after{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    top: -25px;
+    right: 5px;
+    z-index: 1;
+    border-radius: 0 0 10px 0;
+    transform: rotateX(60deg);
+    transform: skewX(40deg);
+
+}
+.Escalera2{
+    width: 140px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    position: relative;
+    transform-style: preserve-3d;
+    right: 16px;
+    top: 58px;
+    border-radius: 0 10px 0 0;
+    box-shadow: 80px -60px 50px 20px rgb(53, 52, 52);
+
+}
+.Escalera2::after{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    width: 145px;
+    height: 30px;
+    position: absolute;
+    top: -19px;
+    z-index: 1;
+    transform: rotateX(90deg);
+    transform: skewX(40deg);
+    border-radius: 0 0 10px 0;
+    right: 5px;
+}
+.Escalera3{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    position: relative;
+    transform-style: preserve-3d;
+    right: 13px;
+    top: 80px;
+    box-shadow: 80px -60px 50px 20px rgb(53, 52, 52);
+
+}
+.Escalera3::after{
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    transform: rotateX(10deg);
+    transform: skewX(40deg);
+    right: 3px;
+    top: -22px;
+    border-radius: 0 0 10px 0;
+
+}
+.Escalera4{
+    width: 158px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    position: relative;
+    transform-style: preserve-3d;
+    right: 5px;
+    top: 100px;
+    box-shadow: 80px -50px 50px 20px rgb(52, 52, 52);
+
+}
+.Escalera4::after{
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    transform: rotateX(10deg);
+    transform: skewX(40deg);
+    right: 3px;
+    top: -22px;
+    border-radius: 0 0 10px 0;
+    box-shadow: 80px 40px 50px 20px rgb(53, 52, 52);
+}
+.Escalera5{
+ 
+    background:transparent;
+    position: absolute;
+    border: none;
+    box-shadow: 80px 40px 100px 50px rgb(53, 52, 52);
+
+}
+

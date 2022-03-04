@@ -214,4 +214,158 @@
     box-shadow: 80px 40px 100px 50px rgb(53, 52, 52);
 
 }
+/*Scuare*/
+.Body{
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 210px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.HeaderB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.EyesBob{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    width: 60%;
+    height: 80px;
+    align-items: center;
+}
+.Eye1B{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    position: relative;
+}
+.Eye1B::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    border:1px solid black;
+    left: 20px;
+}
+.Eye2B{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    position: relative;
+}
+.Eye2B::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    border:1px solid black;
+    left: 10px;
+}
+.Nose{
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: -21px;
+}
+.BocaB{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 50px 50px 10px 10px;
+    overflow: hidden;
+}
+/*Dientes*/
+.BocaB::after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 20px;
+    left: 25px;
+    top: -5px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+.BocaB::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 20px;
+    left: 50px;
+    top: -5px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+.Panta{
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.Cobar{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    transform: rotate(50deg);
+    top: 0px;
+    left: 42%;
+}
+.Cobar::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    transform: rotate(-5deg);
+    top: -25px;
+    right: 23px;
+}
+.Brazos{
+    background-color: black;
+    width: 5px;
+    height: 200px;
+    z-index: 1;
+    right: 240px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 210px;
+}
+.Brazos1{
+    background-color: black;
+    width: 5px;
+    height: 200px;
+    z-index: 1;
+    right: 5px;
+    transform: rotate(10deg);
+    position: absolute;
+    top: 210px;
+}
+.Contenedor2{
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(20deg);
+}
+
+
 

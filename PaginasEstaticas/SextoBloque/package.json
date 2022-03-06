@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "CreateCss":"node-sass Scss/Estructure.scss Css/Style.css",
+    "CreateCss":"node-sass Scss/Main.scss Css/Style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

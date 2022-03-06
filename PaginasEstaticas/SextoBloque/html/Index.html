@@ -9,14 +9,139 @@
 </head>
 <body>
     <header class="Header-Fond">
-        <p class="Title1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quasi.
+        <p class="Icono">
+            Ilustra<span class="Icono1">tion</span>
         </p>
-        <p class="Title2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi asperiores
-            minima repellendus, tenetur obcaecati aspernatur nam numquam error, corporis totam in soluta? Sapiente exercitationem voluptate totam aliquam ab facilis!
-        </p>
-        <img src="../img/Developer.jpg" alt="">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Settings</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     </header>
+
+    <section class="ContenidoHome">
+        <div class="TitulosPresentacion">
+            <p class="Title1">
+                    Probando Preprocesador de css
+            </p>
+            <p class="Title2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi asperiores
+                minima repellendus, tenetur obcaecati aspernatur nam numquam error, corporis totam in soluta? Sapiente exercitationem voluptate totam aliquam ab facilis!
+            </p>
+            <input class="Therwego" type="button" value="Ther we go">
+        </div>
+        <img class="ImgGif" src="../img/Fondo.gif" alt="">
+    </section>
+
+    <section class="About">
+        <div class="TitulosAbout">
+            <p class="Title1 TitleAbout">
+                    ¿Qué es un preprocesador de css?
+            </p>
+            <p class="Title2 TitleAbout2">
+                    es una forma practica de escribir codigo css, ya que nos permite
+                  a partir de una estructura definida crear estilos sin la necesidad de
+                    volver a crearlos es como los componentes en react js        
+            </p>
+        </div>
+        <div class="TarjetasContenido">
+            <div class="TarjetaContenidoBlock">
+                <div class="Front">
+                    <H1 class="TitleFront">
+                        Variables
+                    </H1>
+                    <p class="TextFront">
+                        Las variables en scss son de mucha ayuda cuando queremos reutilizar algún color,
+                        alguna fuente o algun tamaño y que no sea necesariamente definido en las variables globales 
+                    </p>
+                </div>
+                <div class="Back">
+                    <div class="IntroduceBack">
+                        <p>
+                            /*Declaración*/
+                            $Nombre:Intrucción;
+                        </p>
+                        <p>
+                            /*Ejemplo*/
+                            $ColoresPrimarios:blue;
+
+                            H1{
+                                background-color:$ColoresPrimarios;
+                            }
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="TarjetaContenidoBlock">
+                <div class="Front">
+                    <H1 class="TitleFront">
+                        Mixin
+                    </H1>
+                    <p class="TextFront">
+                        los Mixin es la forma en la cual nos evitamos poner todo el codigo css en una sola linea de 
+                        codigo
+                    </p>
+                </div>
+                <div class="Back">
+                    <p>
+                        /*Declaración*/
+                        @mixin nombre{
+                            intrucciones
+                        }
+                    </p>
+                    <p>
+                        /*Ejemplo*/
+                        @mixin flexboxContent{
+                            display:flex;
+                            flex-direction:column;
+                        }
+                        .Contenido{
+                            @include flexboxContent;
+                        }
+
+                    </p>
+                </div>
+            </div>
+            <div class="TarjetaContenidoBlock">
+                <div class="Front">
+                    <H1 class="TitleFront">
+                        Importaciones
+                    </H1>
+                    <p class="TextFront">
+                        las importaciones nos permiten exportar nuestros estilos para tener una
+                        estructura mas organizada
+                    </p>
+                </div>
+                <div class="Back">
+                    <p>
+                        /*Declaración*/
+                        @mixin nombre{
+                            intrucciones
+                        }
+                        /*Ruta*/
+                    </p>
+                    <p>
+                        /*Ejemplo*/
+                        @mixin flexboxContent{
+                            display:flex;
+                            flex-direction:column;
+                        }
+                        /*Ruta*/
+                        ../Scss/Datos
+                        
+                        .Contenido{
+                            @include flexboxContent;
+                        }
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
 </body>
 </html>

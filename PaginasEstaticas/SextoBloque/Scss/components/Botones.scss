@@ -1,0 +1,12 @@
+@import "../Base/Base.scss";
+
+@mixin BotonesPrincipales{
+    background-color: $ColoresSegundarios;
+    border-radius: 50px;
+    width: 90px;
+    height: 40px;
+    margin-left: 30%;
+    margin-top: 20px;
+    color: $ColoresContenido;
+    border: 1px solid $ColoresContenido;
+}

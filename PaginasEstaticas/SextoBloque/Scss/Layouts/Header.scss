@@ -1,0 +1,80 @@
+@import "../Base/Base.scss";
+@import "../components/Botones.scss";
+/*Mixin en Scss*/
+@mixin  Icono{
+    .Icono{
+        font-size: 20px;
+        color: $ColoresPrimarios;
+        margin-left: 50px;
+    }
+    .Icono1{
+        font-size: 15px;
+        color: red;
+    }
+}
+@mixin ContenidoDividido{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+@mixin Menu{
+    nav ul{
+        display: flex;
+        list-style: none;
+        width: 100%;
+        li{
+            padding: 20px;
+            text-decoration: none;
+            color: $ColorMenu;
+        }
+        li:hover{
+            border-bottom: 1px solid $ColorMenu;
+        }
+    } 
+}
+@mixin TitulosPrincipales{
+    color: $ColoresTitulos;
+    font-size: 30px;
+    font-family: $FuenteDoc;
+    margin-bottom: 15px;
+
+}
+@mixin TitulosSecundarios{
+    color: $ColoresContenido;
+    font-family: $FuenteDoc;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+/*Contenido css*/
+.Header-Fond{
+    @include Icono;
+    @include ContenidoDividido;
+    @include Menu;
+    height: 110px;
+    border-bottom: 0.5px solid black;
+    background-color: $ColorFondo;
+}
+.ContenidoHome{
+    @include ContenidoDividido;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    margin-bottom: 180px;
+}
+.Therwego{
+    @include BotonesPrincipales;
+}
+.Therwego:hover{
+    transition: 1s;
+    background-color: $ColorFondo;
+    color: $ColorMenu;
+}
+.Title1{
+    @include TitulosPrincipales;
+}
+.Title2{
+    @include TitulosSecundarios;
+}

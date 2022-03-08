@@ -8,3 +8,96 @@
 /*Fuente de las letras*/
 .TitlePrimary {
   font-family: "Merriweather", serif; }
+
+.Header {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .Header__side__1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader 10s infinite;
+    transition: 5s; }
+  .Header__side__2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader1 10s infinite;
+    transition: 5s; }
+  .Header__side__3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader2 10s infinite;
+    transition: 5s; }
+  .Header__side__4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: OpacityHeader3 10s infinite;
+    transition: 5s; }
+
+@keyframes OpacityHeader {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes OpacityHeader1 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes OpacityHeader2 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes OpacityHeader3 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }

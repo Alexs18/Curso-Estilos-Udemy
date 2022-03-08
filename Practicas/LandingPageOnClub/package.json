@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "CreateCss":"node-sass Scss/Main.scss Css/Styles.css"
+    "CreateCss": "node-sass Scss/Main.scss Css/Styles.css",
+    "ReloadAuto":"nodemon -e scss -x \"npm run CreateCss\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
   }
 }

@@ -1,0 +1,65 @@
+$NeutroColor:white;
+$NeutroColor1:black;
+$PrimariyColor0:yellow;
+$PrimariyColor1:blue;
+$PrimaryColor2:red;
+$SecondaryColor0:orange;
+$SecondaryColor1:green;
+$SecondaryColor2:Purple;
+
+@mixin  ContenidoGrid{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 1em;
+    grid-template-rows: 120px 120px 120px;
+}
+.Secundarios {
+    margin-top: -150px;
+  }
+  
+  .ContenidoColores{
+    width: 100%;
+    height: 100vh;
+  }
+.Primarios, .Secundarios, .Neutros, .EjemplosMezclas{
+    @include ContenidoGrid;
+}
+.EjemplosMezclas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.Amarillo{
+    background-color: $PrimariyColor0;
+}
+.Azul{
+    background-color: $PrimariyColor1;
+}
+.Rojo{
+    background-color: $PrimaryColor2;
+}
+.Naranja{
+    background-color: $SecondaryColor0;
+}
+.Verde{
+    background-color: $SecondaryColor1;
+}
+.Morado{
+    background-color: $SecondaryColor2;
+}
+.Blanco{
+    background-color: $NeutroColor;
+    border:1px solid black;
+}
+.Negro{
+    background-color: $NeutroColor1;
+}
+.PrimerMezcla{
+    background: linear-gradient($PrimariyColor0, $SecondaryColor2);
+}
+.SegundaMezcla{
+    background: linear-gradient($SecondaryColor0, $PrimariyColor0, $PrimaryColor2);
+}
+.TerceraMezcla{
+    background: linear-gradient($SecondaryColor1, $PrimariyColor0, $PrimariyColor1);
+}

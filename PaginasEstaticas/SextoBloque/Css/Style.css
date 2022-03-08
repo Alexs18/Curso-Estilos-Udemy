@@ -149,3 +149,27 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   margin-bottom: 10px; }
+
+.Primarios, .Secundarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  grid-template-rows: 500px 500px 500px; }
+
+.Amarillo {
+  background-color: yellow; }
+
+.Azul {
+  background-color: blue; }
+
+.Rojo {
+  background-color: red; }
+
+.Naranja {
+  background-color: orange; }
+
+.Verde {
+  background-color: green; }
+
+.Morado {
+  background-color: Purple; }

@@ -1,6 +1,3 @@
-.TitlePrimary{
-    font-family: $FontGoogle;
-}
 .Header{
     width: 100%;
     height: 100vh;
@@ -49,4 +46,55 @@
         animation: OpacityHeader3 10s infinite;
         transition: 5s;
     }
+    &__LogoOnclub{
+        width: 200px;
+        height: 200px;
+        top: 15%;
+        left: 43%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__LogoDrawing{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: rgb(10, 9, 9);
+        border: 7px solid rgb(59, 70, 221);
+    }
+    &__LogoDrawing::after{
+        content: "";
+        position: absolute;
+        top: 11%;
+        left: 6%;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        border: 7px solid white;
+        border-top: 2px solid black;
+    }
+    &__LogoDrawing::before{
+        content: "";
+        position: absolute;
+        top: 6%;
+        left: 42%;
+        width: 12px;
+        z-index: 1;
+        height: 47px;
+        border-radius: 50px;
+        background-color: white;
+    }
+    &__TextHeader{
+        top: 45%;
+        left: 32%;
+        position: absolute;
+    }
+    &__Btn{
+        position: absolute;
+        top: 60%;
+        left: 46%;
+    }
+
 }

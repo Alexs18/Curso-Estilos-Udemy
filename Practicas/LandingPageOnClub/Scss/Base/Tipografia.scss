@@ -1,0 +1,14 @@
+.Header1__PrimaryText{
+    color: $NeutralColor1;
+    font-family: $FontGoogle; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    &__Main{
+       font-size: 30px;
+    }
+    &__sub{
+        font-size: 18px;
+    }
+}

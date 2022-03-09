@@ -95,7 +95,7 @@
     position: absolute;
     top: 90px;
     top: 60%;
-    left: 41%; }
+    left: 46%; }
 
 @keyframes OpacityHeader {
   0% {
@@ -145,6 +145,16 @@
   100% {
     opacity: 0; } }
 
+@keyframes Letra {
+  0% {
+    width: auto; }
+  75% {
+    background: linear-gradient(yellow, #161515);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 45px; } }
+
+/*Tipografia de Header*/
 .Header1__PrimaryText {
   color: white;
   font-family: "Merriweather", serif;
@@ -157,16 +167,102 @@
   .Header1__PrimaryText__sub {
     font-size: 18px; }
 
+/*Tipografia de About*/
+.AboutText {
+  width: 40%;
+  color: white;
+  font-family: "Merriweather", serif;
+  text-align: center; }
+  .AboutText__Main {
+    text-transform: uppercase; }
+  .AboutText__Sub {
+    text-transform: lowercase; }
+
 /*Botones Header*/
 .btn_Header {
   text-decoration: none;
   margin: 10px;
   padding: 18px;
-  background: linear-gradient(#4834fa, Purple);
+  background: linear-gradient(#00d9ff, #161515);
   color: white;
-  border-radius: 40px;
+  border-radius: 50px;
   font-family: "Merriweather", serif;
   font-size: 13px; }
   .btn_Header:hover {
     padding: 21px;
     box-shadow: 0px 10px 10px black; }
+
+.About {
+  width: 100%;
+  height: calc(100vh + 100px);
+  background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
+  position: relative; }
+  .About__Title {
+    position: absolute;
+    top: 50px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.Eventos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  grid-template-rows: 300px 300px; }
+  .Eventos__Contenido {
+    margin: 130px 10px 10px 10px; }
+  .Eventos__Titulo {
+    text-align: center;
+    color: white;
+    font-family: "Merriweather", serif; }
+  .Eventos__Titulo2 {
+    color: white;
+    font-family: "Merriweather", serif; }
+  .Eventos__Evento1 {
+    margin-top: 10px;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .Eventos__Evento1Descripcion {
+    background-color: #161515;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column; }
+  .Eventos__Imagen1 {
+    object-fit: cover; }
+  .Eventos__Textos {
+    transition: 1s;
+    margin-top: 60px;
+    font-size: 30px;
+    background: linear-gradient(yellow, #642d64);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Merriweather", serif;
+    animation: Letra 2s infinite; }
+  .Eventos__Evento2 {
+    display: flex;
+    flex-direction: column; }
+  .Eventos__Imagen2 {
+    width: 300px;
+    height: 250px; }
+  .Eventos__Textos2 {
+    font-size: 15px;
+    padding: 2px;
+    font-family: "Merriweather", serif;
+    color: white;
+    background: linear-gradient(white, #e5ff00);
+    -webkit-background-clip: text;
+    color: transparent; }
+
+.Contenido1 {
+  width: 850px;
+  height: 600px; }
+
+.Contenido2 {
+  height: 600px; }

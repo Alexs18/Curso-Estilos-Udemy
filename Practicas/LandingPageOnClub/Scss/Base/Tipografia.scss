@@ -1,3 +1,4 @@
+/*Tipografia de Header*/
 .Header1__PrimaryText{
     color: $NeutralColor1;
     font-family: $FontGoogle; 
@@ -10,5 +11,19 @@
     }
     &__sub{
         font-size: 18px;
+    }
+}
+/*Tipografia de About*/
+.AboutText{
+    width: 40%;
+    color:$NeutralColor1;
+    font-family: $FontGoogle;
+    text-align: center;
+    &__Main{
+        text-transform: uppercase;
+        
+    }
+    &__Sub{
+        text-transform: lowercase;
     }
 }

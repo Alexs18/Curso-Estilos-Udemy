@@ -1,0 +1,86 @@
+.About{
+    width: 100%;
+    height: calc(100vh + 100px);
+    background:linear-gradient($NeutralColor, $PrimaryColor 950px, $ThearColor 600px);
+    position: relative;
+    &__Title{
+        position: absolute;
+        top: 50px;
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.Eventos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-template-rows: 300px 300px;
+    &__Contenido{
+        margin: 130px 10px 10px 10px;
+    }
+    &__Titulo{
+        text-align: center;
+        color: $NeutralColor1;
+        font-family: $FontGoogle;
+    }
+    &__Titulo2{
+        color: $NeutralColor1;
+        font-family: $FontGoogle;
+    }
+    &__Evento1{
+        margin-top: 10px;
+        width: 100%;
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__Evento1Descripcion{
+        background-color:$NeutralColor;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    &__Imagen1{
+       object-fit: cover;
+    }
+    &__Textos{
+        transition: 1s;
+        margin-top: 60px;
+        font-size: 30px;
+        background: linear-gradient(yellow, $ThearColor);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $FontGoogle;
+        animation: Letra 2s infinite;
+    }
+    &__Evento2{
+        display: flex;
+        flex-direction: column;
+    }
+    &__Imagen2{
+        width: 300px;
+        height: 250px;
+    }
+    &__Textos2{
+        font-size: 15px;
+        padding: 2px;
+        font-family: $FontGoogle;
+        color: $NeutralColor1;
+        background: linear-gradient(rgb(255, 255, 255), rgb(229, 255, 0));
+      -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+.Contenido1{
+   width: 850px;
+   height: 600px;
+}
+.Contenido2{
+    height: 600px;
+}

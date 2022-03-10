@@ -266,3 +266,115 @@
 
 .Contenido2 {
   height: 600px; }
+
+.Servicios {
+  background-color: #161515;
+  height: 100vh;
+  width: 100%; }
+  .Servicios__Title {
+    position: absolute;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; }
+  .Servicios__Video {
+    position: absolute;
+    z-index: -1; }
+  .Servicios__Tarjetas {
+    width: 100%;
+    position: absolute;
+    margin-top: -30%; }
+
+.Tarjetas {
+  margin: -50px 10px 10px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .Tarjetas__Ofertas {
+    height: 400px;
+    width: 350px;
+    font-family: "Merriweather", serif;
+    color: yellow; }
+  .Tarjetas__TextoMain {
+    margin-top: 67%;
+    position: absolute;
+    text-align: center;
+    background-color: #0026ff;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 30px; }
+  .Tarjetas__TextoSub {
+    margin-top: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #161515;
+    width: 100%;
+    color: white; }
+
+.Tarjeta1 {
+  background-image: url("/Practicas/LandingPageOnClub/img/BarraLibre.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-origin: initial;
+  position: relative; }
+
+.Tarjeta1::after {
+  position: absolute;
+  content: "Free";
+  background-color: #2600ff;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 22px;
+  left: 50px; }
+
+.Tarjeta2 {
+  background-image: url("/Practicas/LandingPageOnClub/img/GrupoMasAnimado.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-origin: initial;
+  position: relative; }
+
+.Tarjeta2::after {
+  position: absolute;
+  content: "Free";
+  background-color: #2600ff;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 22px;
+  left: 50px; }
+
+.Tarjeta3 {
+  background-image: url("/Practicas/LandingPageOnClub/img/EventosEnVivo.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-origin: initial;
+  position: relative; }
+
+.Tarjeta3::after {
+  position: absolute;
+  content: "Free";
+  background-color: #2600ff;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 22px;
+  left: 50px; }

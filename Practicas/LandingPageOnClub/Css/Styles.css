@@ -280,9 +280,6 @@
     padding: 20px;
     text-align: center;
     margin-top: 60px; }
-  .Servicios__Video {
-    position: absolute;
-    z-index: -1; }
   .Servicios__Tarjetas {
     width: 100%;
     position: absolute;
@@ -378,3 +375,147 @@
   color: yellow;
   font-size: 22px;
   left: 50px; }
+
+.Bebidas {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/BebidasFondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .Bebidas__Title {
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    font-family: "Merriweather", serif;
+    font-size: 40px; }
+  .Bebidas__TitleMain {
+    margin-top: 35px; }
+
+.Catalogo {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between; }
+  .Catalogo__Cocteles {
+    width: 600px;
+    height: 450px;
+    margin: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: all 5s; }
+  .Catalogo__Cocteles__PaginaUno {
+    width: 100%;
+    height: 100%;
+    transition: 5s; }
+  .Catalogo__Cocteles__PaginaDos {
+    width: 100%;
+    height: 100%;
+    transition: 5s;
+    position: absolute;
+    top: 0;
+    z-index: -1; }
+  .Catalogo__Cocteles__PaginaTres {
+    width: 100%;
+    height: 100%;
+    transition: 5s;
+    position: absolute;
+    top: 0;
+    z-index: -2; }
+  .Catalogo__Cocteles__PaginaCuatro {
+    width: 100%;
+    height: 100%;
+    transition: 5s;
+    position: absolute;
+    top: 0;
+    z-index: -3; }
+  .Catalogo__BebidasNormales {
+    width: 600px;
+    height: 450px;
+    margin: 20px;
+    background-color: #adadaf; }
+
+.ContenidoPaginaUno {
+  width: 50%;
+  height: 100%;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  float: right;
+  background-image: url("../img/FondoCocteles.jpg");
+  color: #161515;
+  z-index: 1; }
+  .ContenidoPaginaUno__Titulo0 {
+    font-size: 30px;
+    color: yellow; }
+  .ContenidoPaginaUno__Btn {
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: yellow;
+    border: none;
+    font-family: "Merriweather", serif;
+    font-size: 10px; }
+
+.ContenidoPaginaDos {
+  width: 50%;
+  height: 100%;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  float: right;
+  background-image: url("../img/FondoCoctelMargarita.jpg"); }
+  .ContenidoPaginaDos__Btn {
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: yellow;
+    border: none;
+    font-family: "Merriweather", serif;
+    font-size: 10px; }
+
+.ContenidoPaginaTres {
+  width: 50%;
+  height: 100%;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  float: right;
+  background-image: url("../img/FondoCoctelMojito.jpg"); }
+  .ContenidoPaginaTres__Btn {
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: yellow;
+    border: none;
+    font-family: "Merriweather", serif;
+    font-size: 10px; }
+
+.ContenidoPaginaCuatro {
+  width: 50%;
+  height: 100%;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  float: right; }
+
+.EfectoHoja {
+  transform: rotateY(-140deg);
+  transition: 5s; }

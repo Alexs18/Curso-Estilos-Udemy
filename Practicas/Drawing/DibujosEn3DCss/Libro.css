@@ -1,0 +1,57 @@
+.Libro, .Portada, .PrimerHoja{
+    width: 800px;
+    height: 500px;
+    background-color: red;
+}
+.Libro{
+    position: absolute;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.ContenidoPortada, .ContenidoSegundaHoja{
+    transition: 5s;
+    width: 50%;
+    text-align: center;
+    float: right;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.SegundaHoja{
+    height: 100%;
+}
+.ContenidoSegundaHoja{
+    background-color: brown;
+}
+.PrimerHoja{
+    position: absolute;
+    
+}
+.ContenidoPrimerPagina{
+    transition: 5s;
+    width: 50%;
+    text-align: center;
+    float: right;
+    height: 100%;
+    background-color: rgb(208, 226, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Portada{
+    position: absolute;
+    height: 500px;
+    background-color: blue;
+   
+}
+.PortadaEfecto{
+    transition: 5s;
+    transform: rotateY(-140deg);
+}
+.LibroEstilo{
+    background: linear-gradient(90deg, white 50%, transparent);
+}

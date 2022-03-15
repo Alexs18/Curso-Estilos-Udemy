@@ -1,6 +1,4 @@
 @mixin TarjetasMenu{
-    width: 50%;
-    height: 100%;
     font-family: $FontGoogle;
     text-align: center;
     display: flex;
@@ -8,7 +6,6 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    float: right;
 }
 .Bebidas{
     width: 100%;
@@ -27,106 +24,70 @@
         margin-top: 35px;
     }
 }
-.Catalogo{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-   
 
+.Catalogo{
+    width: calc(100% - 60px);
+    height: 80%;
+    background-color: red;
+    margin: 0px 0px 0px 2%;
+    padding: 20px;
     &__Cocteles{
-        width: 600px;
-        height: 450px;
-        margin: 20px;
+       background-color: blue;
+       width: 45%;
+       height: 80%; 
+       padding: 10px;
+       perspective: 1000px;
+    }
+    &__Cocteles__Contenido{
+        width: calc(100% - 30px);
+        height: 95%;
+        position: absolute;
+        padding: 10px;
         perspective: 1000px;
+        transition: 5s;
         transform-style: preserve-3d;
-        transition: all 5s;
     }
-    &__Cocteles__PaginaUno{
-        width: 100%;
-        height: 100%;
-        transition: 5s;
-    }
-    &__Cocteles__PaginaDos{
-        width: 100%;
-        height: 100%;
-        transition: 5s;
+    &__Cocteles__Paginas{
+        width: calc(100% - 20px);
+        height: 95%;
         position: absolute;
-        top: 0;
-        z-index: -1;
+        transform-style: preserve-3d;
     }
-    &__Cocteles__PaginaTres{
-        width: 100%;
+    &__Cocteles__Paginas__Frontend{
+        backface-visibility: hidden;
+    }
+    &__Cocteles__Paginas__Backend{
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+
+    }
+}
+.ContenidoPaginas{
+    &__Front{
+        width: 50%;
         height: 100%;
-        transition: 5s;
-        position: absolute;
-        top: 0;
-        z-index: -2;
+        float: right;
+        background-color: rgb(145, 255, 0);
     }
-    &__Cocteles__PaginaCuatro{
-        width: 100%;
-        height: 100%;
-        transition: 5s;
-        position: absolute;
-        top: 0;
-        z-index: -3;
-    }
-    &__BebidasNormales{
-        width: 600px;
-        height: 450px;
-        margin: 20px;
-        background-color: rgb(173, 173, 175);
-    }
+    &__Back{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 183, 25);
+    float: left;
+    
+   }
 }
-.ContenidoPaginaUno{
-    @include TarjetasMenu;
-    background-image: url("../img/FondoCocteles.jpg");
-    color: $NeutralColor;
-    z-index: 1;
-    &__Titulo0{
-        font-size: 30px;
-        color: yellow;
+
+.Catalogo__Cocteles{
+    &__Contenido0{
+        
     }
-    &__Btn{
-        width: 120px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: yellow;
-        border: none;
-        font-family: $FontGoogle;
-        font-size: 10px;
+    &__Contenido1{
+        
     }
-}
-.ContenidoPaginaDos{
-    @include TarjetasMenu;
-    background-image: url("../img/FondoCoctelMargarita.jpg");
-    &__Btn{
-        width: 120px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: yellow;
-        border: none;
-        font-family: $FontGoogle;
-        font-size: 10px;
+    &__Contenido2{
+       
     }
-}
-.ContenidoPaginaTres{
-    @include TarjetasMenu;
-    background-image: url("../img/FondoCoctelMojito.jpg");
-    &__Btn{
-        width: 120px;
-        height: 50px;
-        border-radius: 50px;
-        background-color: yellow;
-        border: none;
-        font-family: $FontGoogle;
-        font-size: 10px;
-    }
-}
-.ContenidoPaginaCuatro{
-    @include TarjetasMenu;
 }
 
 .EfectoHoja{

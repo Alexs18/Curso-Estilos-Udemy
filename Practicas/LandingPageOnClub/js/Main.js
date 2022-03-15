@@ -1,12 +1,21 @@
-document.getElementById("BtnLibro").addEventListener("click",()=>{
-    document.getElementById("Portada").classList.toggle("EfectoHoja");
-    document.getElementById("ContenidoPaginaUno").style = "color:black";
-});
-document.getElementById("BtnLibro2").addEventListener("click",()=>{
-    document.getElementById("PortadaDos").classList.toggle("EfectoHoja");
-    document.getElementById("ContenidoPaginaDos").style = "color:black";
-});
-document.getElementById("BtnLibro3").addEventListener("click",()=>{
-    document.getElementById("PortadaTres").classList.toggle("EfectoHoja");
-    document.getElementById("ContenidoPaginaTres").style = "color:black";
-});
+
+function LibroRotador(identificador) {
+    identificador.classList.toggle("EfectoHoja");
+}
+function OcultarPanorama(identificador) {
+    identificador.style = "z-index:-1";
+}
+
+let PuertasArray = document.querySelectorAll("#AbrirLibro");
+let PortadasArray = document.querySelectorAll("#Catalogo__Cocteles__Contenido");
+
+
+for (let index = 0; index < PuertasArray.length; index++) {
+    
+    PuertasArray[index].addEventListener("click", ()=>{
+        LibroRotador(PortadasArray[index]);
+        OcultarPanorama(PortadasArray[index+1]);
+        console.log(index);
+    }); 
+
+}

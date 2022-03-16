@@ -392,30 +392,31 @@
     margin-top: 35px; }
 
 .Catalogo {
-  width: calc(100% - 60px);
+  width: 100%;
   height: 80%;
-  background-color: red;
-  margin: 0px 0px 0px 2%;
-  padding: 20px; }
+  padding: 20px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: space-around; }
   .Catalogo__Cocteles {
-    background-color: blue;
     width: 45%;
     height: 80%;
-    padding: 10px;
-    perspective: 1000px; }
+    padding: 5px;
+    perspective: 1000px;
+    position: relative; }
   .Catalogo__Cocteles__Contenido {
     width: calc(100% - 30px);
     height: 95%;
     position: absolute;
-    padding: 10px;
+    padding: 11px;
     perspective: 1000px;
     transition: 5s;
     transform-style: preserve-3d; }
   .Catalogo__Cocteles__Paginas {
     width: calc(100% - 20px);
     height: 95%;
-    position: absolute;
-    transform-style: preserve-3d; }
+    transform-style: preserve-3d;
+    position: absolute; }
   .Catalogo__Cocteles__Paginas__Frontend {
     backface-visibility: hidden; }
   .Catalogo__Cocteles__Paginas__Backend {
@@ -426,14 +427,107 @@
   width: 50%;
   height: 100%;
   float: right;
-  background-color: #91ff00; }
+  background-color: yellow;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #7e22a8; }
 
 .ContenidoPaginas__Back {
   width: 50%;
   height: 100%;
-  background-color: #00b719;
-  float: left; }
+  color: #7119c4;
+  float: left;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+
+.ContenidoPaginas__Front__PrimerPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCocteles.jpg");
+  background-position: center; }
+
+.ContenidoPaginas__Back__PrimerPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCocteles.jpg"); }
+
+.ContenidoPaginas__Front__SegundaPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMargarita.jpg"); }
+
+.ContenidoPaginas__Back__SegundaPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMargarita.jpg"); }
+
+.ContenidoPaginas__Front__TerceraPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMojito.jpg"); }
+
+.ContenidoPaginas__Back__TerceraPagina {
+  background-color: transparent;
+  background-image: url("../img/FondoCoctelMojito.jpg"); }
+
+.Catalogo__Portada {
+  background: linear-gradient(brown, black);
+  width: calc(100% - 10px);
+  height: calc(100% - 20px);
+  border: 2px dotted #96069b;
+  position: absolute;
+  z-index: -3;
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: space-around; }
+  .Catalogo__Portada__Frontend {
+    color: white;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: 99%;
+    background-image: url("../img/PortadaCocteles.jpg");
+    background-position: center; }
+  .Catalogo__Portada__Backend {
+    color: white;
+    width: 45%;
+    background-image: url("../img/PortadaCocteles.jpg");
+    background-position: center;
+    height: 99%;
+    display: block;
+    float: left;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; }
+
+.ContenidoPaginas__Btn2 {
+  width: 100px;
+  padding: 5px;
+  border: none;
+  background-color: #141414;
+  font-size: 15px;
+  color: #e3f0e3;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px rgba(105, 10, 85, 0.925); }
+  .ContenidoPaginas__Btn2:hover {
+    background-color: #d4dfc5;
+    font-size: 15px;
+    color: #142414; }
 
 .EfectoHoja {
-  transform: rotateY(-140deg);
+  transform: rotateY(-150deg);
   transition: 5s; }

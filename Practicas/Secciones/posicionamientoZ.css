@@ -1,0 +1,72 @@
+.Contenido{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(87, 85, 85);
+    position: relative;
+    perspective: 700px;
+    margin-top: 100px;
+    margin-left: 70px;
+    
+}
+.Lentes{
+    transform-style: preserve-3d;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    display: flex;
+    padding: 20px;
+    animation: AnimacionLentes 5s infinite;
+}
+.Collar{
+    width: 43px;
+    height: 10px;
+    background-color: black;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 71px;
+}
+.Luna{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 50px 50px;
+}
+.Luna::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 50px;
+    background-color: black;
+    top: 25%;
+    border-radius: 0 100px 0 0;
+}
+.Luna::before{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    content: "";
+}
+
+.Palo{
+    margin-top: -8px;
+    width: 200px;
+    height: 20px;
+    background-color: rgb(13, 9, 243);
+    border-radius: 10px 0 10px 10px;
+    transform: rotateY(90deg) translateZ(-75px) translateX(55px) translateY(40px);
+}
+.Palo2{
+    transform: rotateY(90deg) translateZ(-320px) translateX(55px) translateY(40px);
+}
+@keyframes AnimacionLentes {
+    100%{
+        transition: 5s;
+        transform: translateZ(300px) rotateY(360deg) rotateX(30deg);
+    }
+}

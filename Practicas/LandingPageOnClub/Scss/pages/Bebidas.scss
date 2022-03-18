@@ -71,6 +71,9 @@
         background-color: yellow;
         @include TarjetasMenu;
         color: rgb(126, 34, 168);
+        &__Cerveza{
+            background-color: red;
+        }
     }
     &__Back{
         width: 50%;
@@ -85,6 +88,7 @@
        background-image: url("../img/FondoCocteles.jpg");
        background-position: center;
    }
+  
    &__Back__PrimerPagina{
     background-color: transparent;
     background-image: url("../img/FondoCocteles.jpg");
@@ -99,7 +103,6 @@
     background-color: transparent;
     background-image: url("../img/FondoCoctelMargarita.jpg");
    }
-
    &__Front__TerceraPagina{
     background-color: transparent;
     background-image: url("../img/FondoCoctelMojito.jpg");
@@ -107,7 +110,48 @@
    &__Back__TerceraPagina{
     background-color: transparent;
     background-image: url("../img/FondoCoctelMojito.jpg");
-   }
+   } 
+   &__Front__PrimerPaginaC{
+    background-color: transparent;
+    background-image: url("../img/FondoCerveza.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    &__Back__PrimerPaginaC{
+        background-image: url("../img/FondoCerveza.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Front__SegundaPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoMichelada.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Back__SegundaPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoMichelada.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Front__TerceraPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoCorona.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__Back__TercerPaginaC{
+        background-color: transparent;
+        background-image: url("../img/FondoCorona.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } 
 }
 
 
@@ -123,11 +167,19 @@
     justify-content: space-around;
     &__Frontend{
         color: rgb(255, 255, 255);
-        @include TarjetasMenu;
         width: 45%;
         height: 99%;
         background-image: url("../img/PortadaCocteles.jpg");
         background-position: center;
+        @include TarjetasMenu;
+        &__TextoFront{
+            width: 200px;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
     }
     &__Backend{
         color: rgb(255, 255, 255);

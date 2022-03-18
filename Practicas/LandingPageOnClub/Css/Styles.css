@@ -436,6 +436,8 @@
   align-items: center;
   flex-direction: column;
   color: #7e22a8; }
+  .ContenidoPaginas__Front__Cerveza {
+    background-color: red; }
 
 .ContenidoPaginas__Back {
   width: 50%;
@@ -475,6 +477,47 @@
   background-color: transparent;
   background-image: url("../img/FondoCoctelMojito.jpg"); }
 
+.ContenidoPaginas__Front__PrimerPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoCerveza.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Back__PrimerPaginaC {
+  background-image: url("../img/FondoCerveza.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Front__SegundaPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoMichelada.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Back__SegundaPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoMichelada.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Front__TerceraPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoCorona.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.ContenidoPaginas__Back__TercerPaginaC {
+  background-color: transparent;
+  background-image: url("../img/FondoCorona.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 .Catalogo__Portada {
   background: linear-gradient(brown, black);
   width: calc(100% - 10px);
@@ -487,17 +530,24 @@
   justify-content: space-around; }
   .Catalogo__Portada__Frontend {
     color: white;
+    width: 45%;
+    height: 99%;
+    background-image: url("../img/PortadaCocteles.jpg");
+    background-position: center;
     font-family: "Merriweather", serif;
     text-align: center;
     display: flex;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    width: 45%;
-    height: 99%;
-    background-image: url("../img/PortadaCocteles.jpg");
-    background-position: center; }
+    flex-direction: column; }
+    .Catalogo__Portada__Frontend__TextoFront {
+      width: 200px;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
   .Catalogo__Portada__Backend {
     color: white;
     width: 45%;

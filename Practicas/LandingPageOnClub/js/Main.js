@@ -1,42 +1,56 @@
 
-/**Funciones Abrir Libro */
+/**Variables*/
+let PuertasCocteles = document.querySelectorAll("#AbrirLibro");
+let PortadasCocteles = document.querySelectorAll("#Catalogo__Cocteles__Contenido");
+let PuertasCervezas = document.querySelectorAll("#AbrirLibroC");
+let PortadasCervezas = document.querySelectorAll("#Catalogo__Cerveza__Contenido");
+let PuertasCerradasArray = document.querySelectorAll("#RegresarPagina");
+let PuertasCerradasC = document.querySelectorAll("#RegresarPaginaC");
+
+
+/**Funciones Abrir y cerrar Libro o cartelera */
 function LibroRotador(identificador) {
     identificador.classList.toggle("EfectoHoja");
 }
 function OcultarPanorama(identificador, zindex) {
     identificador.style = `z-index:${zindex}`;
 }
-/**Funciones Cerrar Libro */
 
-
-
-let PuertasArray = document.querySelectorAll("#AbrirLibro");
-let PortadasArray = document.querySelectorAll("#Catalogo__Cocteles__Contenido");
-
-console.log(PortadasArray.length);
-console.log(PuertasArray.length);
-
-
-for (let index0 = 0; index0 < PuertasArray.length; index0++) {
+function OpenBook(Boton, Portada) {
     
-    console.log(index0);
-    PuertasArray[index0].addEventListener("click", ()=>{
-        console.log(index0);
-        LibroRotador(PortadasArray[index0]);
-        console.log(PortadasArray[index0]);
-        OcultarPanorama(PortadasArray[index0+1], -(index0+1));
-    }); 
+    for (let index0 = 0; index0 < Boton.length; index0++) {
+    
+        Boton[index0].addEventListener("click", ()=>{
+            
+            LibroRotador(Portada[index0]);
+            OcultarPanorama(Portada[index0+1], -(index0+1));
+        }); 
+    
+    }
 
 }
 
-let PuertasCerradasArray = document.querySelectorAll("#RegresarPagina");
+function CloseBook(Boton, Portada) {
+    
+    for (let index = 0; index < Boton.length; index++) {
+    
+        Boton[index].addEventListener("click", ()=>{
+            
+            LibroRotador(Portada[index]);
+            OcultarPanorama(Portada[index+1], (index+1));
 
-for (let index = 0; index < PuertasCerradasArray.length; index++) {
-    
-    PuertasCerradasArray[index].addEventListener("click", ()=>{
-        LibroRotador(PortadasArray[index]);
-        console.log("A tope!");
-        OcultarPanorama(PortadasArray[index+1], (index+1));
-    });
-    
+        });
+        
+    }
+
 }
+
+OpenBook(PuertasCocteles, PortadasCocteles);
+OpenBook(PuertasCervezas, PortadasCervezas);
+
+CloseBook(PuertasCerradasArray, PortadasCocteles);
+CloseBook(PuertasCerradasC, PortadasCervezas);
+
+
+
+

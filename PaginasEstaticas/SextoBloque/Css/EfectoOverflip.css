@@ -1,0 +1,67 @@
+.ContenidoAvegers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px;
+    gap: 1em;
+    color: white;
+    text-align: center;
+}
+.Avengers{
+    width: 300px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Avengers1{
+    background-image: url("../img/IronMan.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    object-position: center; 
+}
+.Avengers2{
+    background-image: url("../img/Thor.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    object-position: center; 
+}
+.Avengers3{
+    background-image: url("../img/Cap.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    object-position: center; 
+}
+.Avengers4{
+    background-image: url("../img/Falcon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    object-position: center; 
+}
+.Avenger__Introduction{
+    position: absolute;
+    font-size: 30px;
+    background: linear-gradient(rgb(0, 0, 0, .7), rgb(0, 0, 255, .7));
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.Avenger__Introduction:hover{
+    opacity: 0.7;
+}
+.TextAvenger{
+    opacity: 0.7;
+}
+.TextAvenger:hover{
+    opacity: 0;
+}

@@ -168,14 +168,14 @@
     font-size: 18px; }
 
 /*Tipografia de About*/
-.AboutText {
+.EventsText {
   width: 40%;
   color: white;
   font-family: "Merriweather", serif;
   text-align: center; }
-  .AboutText__Main {
+  .EventsText__Main {
     text-transform: uppercase; }
-  .AboutText__Sub {
+  .EventsText__Sub {
     text-transform: lowercase; }
 
 /*Botones Header*/
@@ -192,12 +192,12 @@
     padding: 21px;
     box-shadow: 0px 10px 10px black; }
 
-.About {
+.Events {
   width: 100%;
   height: calc(100vh + 100px);
   background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
   position: relative; }
-  .About__Title {
+  .Events__Title {
     position: absolute;
     top: 50px;
     width: calc(100% - 20px);
@@ -581,3 +581,62 @@
 .EfectoHoja {
   transform: rotateY(-150deg);
   transition: 5s; }
+
+.AboutUs {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/AboutUsFondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  font-family: "Merriweather", serif; }
+  .AboutUs__Title {
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 4%;
+    color: white; }
+  .AboutUs__Img {
+    width: 45%;
+    height: calc(100% - 90px);
+    margin: 45px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .AboutUs__Img__Content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: white;
+      background-image: url("../img/AboutUs.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 80%;
+      height: 80%;
+      background-size: cover;
+      background-color: #743392;
+      border: none;
+      border-radius: 10px; }
+  .AboutUs__Introduction {
+    width: 50%;
+    margin: 45px 10px 10px 10px;
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center; }
+    .AboutUs__Introduction__Content {
+      width: 95%;
+      height: 80%;
+      margin-top: 15%; }
+      .AboutUs__Introduction__Content__Title {
+        text-transform: uppercase;
+        font-size: 35px;
+        color: white; }
+      .AboutUs__Introduction__Content__Text {
+        font-size: 15px;
+        text-transform: lowercase;
+        line-height: 2em;
+        color: brown; }

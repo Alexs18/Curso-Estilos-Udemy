@@ -53,4 +53,45 @@ CloseBook(PuertasCerradasC, PortadasCervezas);
 
 
 
+/*Testimonial**/
 
+/**Variables */
+let TextHidden = document.querySelectorAll("#TextHidden");
+let TermianlButton = document.querySelectorAll("#TestimonialButton");
+let ContenidoImg = document.querySelectorAll("#ContenidoImg");
+
+
+/**Funciones */
+function TextTes(identificador) {
+    let resultado = identificador.classList.toggle("Expandir");
+    return resultado;
+}
+
+function BackgroundImg(resultado, identificador) {
+   
+    if (resultado == true) {
+        identificador.style = `opacity:0.5`;        
+    }else{
+        identificador.style = `opacity:1`;
+    }
+    
+}
+
+function OpenText(Boton, TextHidden, Contenido) {
+    
+    for (let index0 = 0; index0 < Boton.length; index0++) {
+    
+        Boton[index0].addEventListener("click", ()=>{
+            
+            let resultadoTextos = TextTes(TextHidden[index0]);
+            BackgroundImg(resultadoTextos, Contenido[index0]);
+
+        }); 
+    
+    }
+
+}
+
+/**Ejecutar Funciones */
+
+OpenText(TermianlButton, TextHidden, ContenidoImg);

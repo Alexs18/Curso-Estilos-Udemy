@@ -640,3 +640,112 @@
         text-transform: lowercase;
         line-height: 2em;
         color: brown; }
+
+.Testimonials {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Testimonios.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Merriweather", serif;
+  position: relative; }
+  .Testimonials__Content {
+    position: absolute;
+    margin: 5% 0 0 1%;
+    padding: 30px 0 100px 0; }
+  .Testimonials__Title {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: white;
+    font-size: 40px; }
+  .Testimonials__Card {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 360px;
+    gap: 1em; }
+    .Testimonials__Card__Content {
+      background: linear-gradient(maroon, #25258b);
+      width: 300px;
+      margin-left: 5px; }
+      .Testimonials__Card__Content__Img {
+        width: 100%;
+        height: 85%;
+        background-color: yellow;
+        position: relative;
+        transition: 1s; }
+      .Testimonials__Card__Content__Text {
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        margin-top: 5%;
+        color: yellow; }
+      .Testimonials__Card__Content__Btn {
+        font-size: 35px;
+        color: black;
+        position: absolute;
+        top: 80%;
+        animation: BtnTestimonios 1s infinite; }
+      .Testimonials__Card__Content__TextHidden {
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        clip-path: circle(20% at 50% 96%);
+        transition: 1s; }
+        .Testimonials__Card__Content__TextHidden__Text {
+          margin-top: 60px;
+          padding: 10px;
+          line-height: 20px;
+          color: black;
+          font-size: 15px; }
+
+.Expandir {
+  clip-path: circle(100% at 50% 50%); }
+
+.Content1 {
+  background-image: url("../img/Juan.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.Content2 {
+  background-image: url("../img/Maria.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.Content3 {
+  background-image: url("../img/Carlos.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.Content4 {
+  background-image: url("../img/Dayana.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+@keyframes BtnTestimonios {
+  0% {
+    top: 85%; } }

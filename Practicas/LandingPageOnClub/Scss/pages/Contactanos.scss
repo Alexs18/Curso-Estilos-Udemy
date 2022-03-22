@@ -1,0 +1,120 @@
+.Contactanos{
+    width: 100%;
+    height: auto;
+    background-image: url("../img/Contactanos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__Content__Title{
+        font-size: 40px;
+        color: yellow;
+        font-family: $FontGoogle;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    &__Content__Secondary{
+        width: calc(100% - 40px);
+        height: 80vh;
+        margin-top: 40px;
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1em;
+        &__Img{
+            width: 38%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        &__Formulario{
+            background-color:transparent;
+            box-shadow: 0 20px 50px black;
+            width: 55%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 0px;
+            color: white;
+            display: block;
+            &__Title{
+                text-align: center;
+            }
+        }
+    
+    }
+
+}
+
+
+.Formulario__FirstSection{
+    width: 100%;
+    height: 35%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+    grid-template-rows: 80px 80px;
+    margin: 20px 0 0 0;
+    flex-wrap: wrap;
+}
+.Formulario__Content{
+    width: 320px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:10px 0 0 8px;
+    &__Input{
+        width: 90%;
+        padding: 10px;
+        border: none;
+        &__Text{
+            height: 150px;
+            width: calc(100% - 40px);
+        }
+        &__Checkbok{
+            display: flex;
+            padding: 11px;
+            width: 90%;
+        }
+        &__Submit{
+            background-color: rgb(0, 89, 255);
+            text-align: center;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 15px;
+           
+        }
+    }
+    &__Textmsj{
+        padding: 10px;
+        width: 94%;
+        line-height: 40px;
+        height: 40%;
+        text-align: center;
+        margin-top: -20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__Submit{
+        width: 200px;
+        margin-left: 36%;
+    }
+}
+
+.Header__LogoOnclub__Contact{
+    margin: -40px 0 0 -42%;
+    width: calc(100% - 10px);
+    height: 60%;
+    &__Text{
+        position: absolute;
+        top: 140%;
+        width: 265%;
+        font-size: 40px;
+        left: -80%;
+    }
+}

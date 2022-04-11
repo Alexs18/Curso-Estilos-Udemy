@@ -13,5 +13,24 @@
             
         </div>
     </div>
+    <div class="Container2">
+        <div class="ContenidoTarjeta">
+            <div class="TextoExpande" id="Expande">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nobis ex provident consectetur dolorum, facilis exercitationem minus cupiditate quam recusandae sapiente qui eligendi natus, expedita saepe aspernatur atque. Sint, sunt.
+                </p>
+                <input type="button" value="Abrir" class="Abrir" id="Abrir">
+            </div>
+            <p class="leer">
+                <input type="button" value="Generar" id="Generar">
+            </p>
+        </div>   
+     </div>
+
 </body>
+<script>
+    document.getElementById("Abrir").addEventListener("click", ()=>{
+        document.getElementById("Expande").classList.toggle("Extiende");
+    });
+</script>
 </html>

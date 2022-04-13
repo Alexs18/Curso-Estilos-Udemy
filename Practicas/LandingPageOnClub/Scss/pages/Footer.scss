@@ -5,7 +5,8 @@
     position: absolute;
     &__RedesSociales{
         padding: 20px;
-        background-color: purple;
+        margin-top: 30px;
+        border: 0;
         position:relative;
         font-size: $FontGoogle;
         text-align: center;
@@ -22,14 +23,28 @@
         grid-template-rows: 300px;
         gap: 1em;
         &__section{
-            background-color: red;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $FontGoogle;
+            &__Title{
+                font-size: 20px;
+                color: yellow;
+            }
+            &__List{
+                list-style: none;
+                line-height: 35px;
+                color: $PrimaryColor;
+            }
         }
     }
     &__Copy{
         font-size: $FontGoogle;
         margin-top: 30px;
         text-align: center;
+        color: $PrimaryColor;
 
     }
 

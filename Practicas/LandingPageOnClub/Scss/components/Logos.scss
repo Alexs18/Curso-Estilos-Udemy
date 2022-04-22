@@ -1,0 +1,41 @@
+.LogoOnclub{
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 43%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__Main{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: $NeutralColor;
+        border: 7px solid $PrimaryColor;
+    }
+    &__Main::after{
+        content: "";
+        position: absolute;
+        top: 11%;
+        left: 5%;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 7px solid rgb(236, 232, 232);
+        border-top: 2px solid rgb(22, 21, 21);
+    }
+    &__Main::before{
+        content: "";
+        position: absolute;
+        top: 6%;
+        left: 42%;
+        width: 10px;
+        z-index: 1;
+        height: 47px;
+        border-radius: 50px;
+        background-color:rgb(236, 226, 226);
+    }
+
+}

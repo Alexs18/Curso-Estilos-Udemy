@@ -52,42 +52,6 @@
     background-size: cover;
     animation: OpacityHeader3 10s infinite;
     transition: 5s; }
-  .Header__LogoOnclub {
-    width: 200px;
-    height: 200px;
-    top: 15%;
-    left: 43%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .Header__LogoDrawing {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #161515;
-    border: 7px solid #4834fa; }
-  .Header__LogoDrawing::after {
-    content: "";
-    position: absolute;
-    top: 11%;
-    left: 6%;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: 7px solid #ece2e2;
-    border-top: 2px solid #161515; }
-  .Header__LogoDrawing::before {
-    content: "";
-    position: absolute;
-    top: 6%;
-    left: 42%;
-    width: 10px;
-    z-index: 1;
-    height: 47px;
-    border-radius: 50px;
-    background-color: #ece2e2; }
   .Header__TextHeader {
     top: 40%;
     left: 32%;
@@ -867,7 +831,6 @@
       color: yellow;
       font-family: "Merriweather", serif; }
     .Ubicacion__Content__map {
-      margin-top: 20px;
       display: flex;
       position: absolute;
       width: 100%;
@@ -880,7 +843,7 @@
         margin-left: 20px; }
       .Ubicacion__Content__map__Logo {
         position: relative;
-        margin: 300px 0 0 200px;
+        margin: 50px 0 0 100px;
         width: 30px;
         height: 200px; }
 
@@ -925,3 +888,40 @@
     margin-top: 30px;
     text-align: center;
     color: #4834fa; }
+
+.LogoOnclub {
+  width: 200px;
+  height: 200px;
+  top: 15%;
+  left: 43%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .LogoOnclub__Main {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #161515;
+    border: 7px solid #4834fa; }
+  .LogoOnclub__Main::after {
+    content: "";
+    position: absolute;
+    top: 11%;
+    left: 5%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 7px solid #ece8e8;
+    border-top: 2px solid #161515; }
+  .LogoOnclub__Main::before {
+    content: "";
+    position: absolute;
+    top: 6%;
+    left: 42%;
+    width: 10px;
+    z-index: 1;
+    height: 47px;
+    border-radius: 50px;
+    background-color: #ece2e2; }

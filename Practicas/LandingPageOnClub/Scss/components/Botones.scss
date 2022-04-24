@@ -2,13 +2,15 @@
 .btn_Header{
     text-decoration: none; 
     margin: 10px;
-    padding: 18px;
-    background:linear-gradient($SecondaryColor, $NeutralColor);
+    padding: 10px;
     color: $NeutralColor1;
-    border-radius: 50px;
+    border: 2px solid $NeutralColor1;
+    border-radius: 10px;
     font-family: $FontGoogle;
     font-size: 13px;
-   
+    width: 100px;
+    text-align: center;
+    display: inline-block;
     &:hover{
 
        padding: 21px;

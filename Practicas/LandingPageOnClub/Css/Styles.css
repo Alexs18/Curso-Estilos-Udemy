@@ -16,7 +16,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit.jpg");
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +36,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit4.jpg");
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,12 +154,15 @@
 .btn_Header {
   text-decoration: none;
   margin: 10px;
-  padding: 18px;
-  background: linear-gradient(#00d9ff, #161515);
+  padding: 10px;
   color: white;
-  border-radius: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
   font-family: "Merriweather", serif;
-  font-size: 13px; }
+  font-size: 13px;
+  width: 100px;
+  text-align: center;
+  display: inline-block; }
   .btn_Header:hover {
     padding: 21px;
     box-shadow: 0px 10px 10px black; }
@@ -168,7 +171,11 @@
   width: 100%;
   height: calc(100vh + 100px);
   background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
-  position: relative; }
+  position: relative;
+  background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .Eventos {
   display: grid;
@@ -347,7 +354,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url("../img/BebidasFondo.jpg");
+  background-image: url("../img/BebidasFondo3.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   .Bebidas__Title {
@@ -559,7 +566,7 @@
 .AboutUs {
   width: 100%;
   height: 100vh;
-  background: url("../img/AboutUsFondo.jpg");
+  background: url("../img/AboutUs2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
@@ -571,7 +578,7 @@
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 4%;
+    top: 12%;
     color: white; }
   .AboutUs__Img {
     width: 45%;
@@ -580,27 +587,13 @@
     display: flex;
     justify-content: center;
     align-items: center; }
-    .AboutUs__Img__Content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      color: white;
-      background-image: url("../img/AboutUs.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 80%;
-      height: 80%;
-      background-size: cover;
-      background-color: #743392;
-      border: none;
-      border-radius: 10px; }
   .AboutUs__Introduction {
     width: 50%;
     margin: 45px 10px 10px 10px;
     height: calc(100% - 90px);
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 8%; }
     .AboutUs__Introduction__Content {
       width: 95%;
       height: 80%;
@@ -613,7 +606,7 @@
         font-size: 15px;
         text-transform: lowercase;
         line-height: 2em;
-        color: brown; }
+        color: yellow; }
 
 .Testimonials {
   width: 100%;
@@ -827,7 +820,7 @@
 .Ubicacion {
   width: 100%;
   height: 100vh;
-  background-image: url("/Practicas/LandingPageOnClub/img/Ubicacion.jpg");
+  background-image: url("../img/FoundUs.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -858,22 +851,11 @@
 
 .Footer {
   width: 100%;
-  height: 75vh;
-  background: linear-gradient(black, purple);
+  height: auto;
+  background: linear-gradient(#161515, #4834fa);
   position: absolute; }
-  .Footer__RedesSociales {
-    padding: 20px;
-    margin-top: 30px;
-    border: 0;
-    position: relative;
-    font-size: "Merriweather", serif;
-    text-align: center; }
-    .Footer__RedesSociales__icon {
-      width: 150px;
-      font-size: 30px;
-      color: yellow; }
   .Footer__Contenido {
-    margin: 20px 20px 0 20px;
+    margin: 15% 20px 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px;
@@ -887,16 +869,17 @@
       font-family: "Merriweather", serif; }
       .Footer__Contenido__section__Title {
         font-size: 20px;
-        color: yellow; }
+        color: #4834fa; }
       .Footer__Contenido__section__List {
         list-style: none;
         line-height: 35px;
-        color: #4834fa; }
+        color: white; }
   .Footer__Copy {
     font-size: "Merriweather", serif;
-    margin-top: 30px;
+    margin-top: 2%;
     text-align: center;
-    color: #4834fa; }
+    padding-bottom: 20px;
+    color: white; }
 
 .LogoOnclub {
   width: 200px;
@@ -914,6 +897,14 @@
     border-radius: 50%;
     background-color: #161515;
     border: 7px solid #4834fa; }
+    .LogoOnclub__Main__Text {
+      margin-top: 85px;
+      width: 200px;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      margin-left: -70px;
+      text-transform: uppercase; }
   .LogoOnclub__Main::after {
     content: "";
     position: absolute;
@@ -934,3 +925,32 @@
     height: 47px;
     border-radius: 50px;
     background-color: #ece2e2; }
+  .LogoOnclub__AboutUs {
+    position: absolute;
+    top: 46%;
+    left: 20%; }
+  .LogoOnclub__AboutUs1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0; }
+  .LogoOnclub__ContactUs {
+    position: absolute;
+    top: 27%;
+    left: 35%; }
+  .LogoOnclub__ContactUs1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0; }
+  .LogoOnclub__Footer {
+    position: absolute;
+    top: 10%;
+    left: 45%; }
+  .LogoOnclub__Footer1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0; }

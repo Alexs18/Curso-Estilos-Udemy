@@ -3,6 +3,10 @@
     height: calc(100vh + 100px);
     background:linear-gradient($NeutralColor, $PrimaryColor 950px, $ThearColor 600px);
     position: relative;
+    background-image: url("/Practicas/LandingPageOnClub/img/OnclubInit3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .Eventos{
     display: grid;

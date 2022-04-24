@@ -81,5 +81,14 @@
         height: 100px;
         top: 0;
     }
+    &__Ubicacion{
+        position: absolute;
+    }
+    &__Ubicacion1{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 150px;
+    }
 
 }

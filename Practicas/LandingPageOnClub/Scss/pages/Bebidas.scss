@@ -10,18 +10,25 @@
 .Bebidas{
     width: 100%;
     height: 100vh;
+    position: relative;
     background-image: url("../img/BebidasFondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     &__Title{
         width: 100%;
         text-align: center;
-        color:yellow;
+        color:$NeutralColor1;
         font-family: $FontGoogle;
-        font-size: 40px;
+        font-size: 20px;
+        position: absolute;
+        margin-top: 7%;
     }
     &__TitleMain{
-        margin-top: 35px;
+        
+        text-transform: uppercase;
+    }
+    &__TitleSub{
+        text-transform: lowercase;
     }
 }
 
@@ -32,6 +39,8 @@
     perspective: 1000px;
     display: flex;
     justify-content: space-around;    
+    position: absolute;
+    margin-top: 15%;
     &__Cocteles{
        width: 45%;
        height: 80%; 

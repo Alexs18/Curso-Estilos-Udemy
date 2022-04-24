@@ -14,16 +14,25 @@
     }
 }
 /*Tipografia de About*/
-.EventsText{
-    width: 40%;
-    color:$NeutralColor1;
-    font-family: $FontGoogle;
-    text-align: center;
-    &__Main{
-        text-transform: uppercase;
-        
-    }
-    &__Sub{
-        text-transform: lowercase;
+.Events{
+    &__Title{
+        position: absolute;
+        top: 50px;
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__Main{
+            width: 40%;
+            color:$NeutralColor1;
+            font-family: $FontGoogle;
+            text-align: center;
+            &__Sub1{
+                text-transform: uppercase;
+            }
+            &__Sub2{
+                text-transform: lowercase;
+            }
+        }
     }
 }

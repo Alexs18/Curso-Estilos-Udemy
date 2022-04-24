@@ -133,15 +133,22 @@
     font-size: 18px; }
 
 /*Tipografia de About*/
-.EventsText {
-  width: 40%;
-  color: white;
-  font-family: "Merriweather", serif;
-  text-align: center; }
-  .EventsText__Main {
-    text-transform: uppercase; }
-  .EventsText__Sub {
-    text-transform: lowercase; }
+.Events__Title {
+  position: absolute;
+  top: 50px;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .Events__Title__Main {
+    width: 40%;
+    color: white;
+    font-family: "Merriweather", serif;
+    text-align: center; }
+    .Events__Title__Main__Sub1 {
+      text-transform: uppercase; }
+    .Events__Title__Main__Sub2 {
+      text-transform: lowercase; }
 
 /*Botones Header*/
 .btn_Header {
@@ -162,13 +169,6 @@
   height: calc(100vh + 100px);
   background: linear-gradient(#161515, #4834fa 950px, #642d64 600px);
   position: relative; }
-  .Events__Title {
-    position: absolute;
-    top: 50px;
-    width: calc(100% - 20px);
-    display: flex;
-    justify-content: center;
-    align-items: center; }
 
 .Eventos {
   display: grid;
@@ -240,7 +240,8 @@
     position: absolute;
     color: white;
     font-family: "Merriweather", serif;
-    font-size: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -248,25 +249,26 @@
   .Servicios__Tarjetas {
     width: 100%;
     position: absolute;
-    margin-top: -30%; }
+    margin-top: -35%; }
 
 .Tarjetas {
   margin: -50px 10px 10px 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
   .Tarjetas__Ofertas {
-    height: 400px;
-    width: 350px;
+    height: 330px;
+    width: 310px;
     font-family: "Merriweather", serif;
     color: yellow; }
   .Tarjetas__TextoMain {
-    margin-top: 67%;
+    margin-top: 78%;
     position: absolute;
     text-align: center;
     background-color: #0026ff;
     width: 100%;
     text-transform: uppercase;
-    font-size: 30px; }
+    font-size: 20px;
+    padding: 10px; }
   .Tarjetas__TextoSub {
     margin-top: 100%;
     position: absolute;
@@ -344,17 +346,22 @@
 .Bebidas {
   width: 100%;
   height: 100vh;
+  position: relative;
   background-image: url("../img/BebidasFondo.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   .Bebidas__Title {
     width: 100%;
     text-align: center;
-    color: yellow;
+    color: white;
     font-family: "Merriweather", serif;
-    font-size: 40px; }
+    font-size: 20px;
+    position: absolute;
+    margin-top: 7%; }
   .Bebidas__TitleMain {
-    margin-top: 35px; }
+    text-transform: uppercase; }
+  .Bebidas__TitleSub {
+    text-transform: lowercase; }
 
 .Catalogo {
   width: 100%;
@@ -362,7 +369,9 @@
   padding: 20px;
   perspective: 1000px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  position: absolute;
+  margin-top: 15%; }
   .Catalogo__Cocteles {
     width: 45%;
     height: 80%;

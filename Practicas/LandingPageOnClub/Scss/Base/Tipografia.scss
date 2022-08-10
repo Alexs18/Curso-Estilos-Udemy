@@ -16,8 +16,8 @@
 /*Tipografia de About*/
 .Events{
     &__Title{
-        position: absolute;
-        top: 50px;
+
+        margin-top: 50px;
         width: calc(100% - 20px);
         display: flex;
         justify-content: center;

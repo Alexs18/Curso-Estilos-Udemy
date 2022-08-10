@@ -134,8 +134,7 @@
 
 /*Tipografia de About*/
 .Events__Title {
-  position: absolute;
-  top: 50px;
+  margin-top: 50px;
   width: calc(100% - 20px);
   display: flex;
   justify-content: center;
@@ -164,7 +163,7 @@
   text-align: center;
   display: inline-block; }
   .btn_Header:hover {
-    padding: 21px;
+    padding: 11px;
     box-shadow: 0px 10px 10px black; }
 
 .Events {
@@ -178,12 +177,14 @@
   background-position: center; }
 
 .Eventos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
-  grid-template-rows: 300px 300px; }
+  display: flex;
+  background-color: red;
+  padding: 0 20px 0 20px;
+  position: relative;
+  gap: 0.5em; }
   .Eventos__Contenido {
-    margin: 130px 10px 10px 10px; }
+    margin: 145px 0 0 0;
+    background-color: yellow; }
   .Eventos__Titulo {
     text-align: center;
     color: white;
@@ -193,8 +194,6 @@
     font-family: "Merriweather", serif; }
   .Eventos__Evento1 {
     margin-top: 10px;
-    width: 100%;
-    height: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +209,6 @@
     object-fit: cover; }
   .Eventos__Textos {
     transition: 1s;
-    margin-top: 60px;
     font-size: 30px;
     background: linear-gradient(yellow, #642d64);
     -webkit-background-clip: text;
@@ -218,11 +216,19 @@
     font-family: "Merriweather", serif;
     animation: Letra 2s infinite; }
   .Eventos__Evento2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 1em; }
+  .Eventos__Evento2Descripcion {
+    background-color: #161515;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
   .Eventos__Imagen2 {
-    width: 300px;
-    height: 250px; }
+    width: 200px;
+    height: 150px; }
   .Eventos__Textos2 {
     font-size: 15px;
     padding: 2px;
@@ -233,11 +239,11 @@
     color: transparent; }
 
 .Contenido1 {
-  width: 850px;
-  height: 600px; }
+  width: 55%;
+  height: auto; }
 
 .Contenido2 {
-  height: 600px; }
+  width: 50%; }
 
 .Servicios {
   background-color: #161515;
